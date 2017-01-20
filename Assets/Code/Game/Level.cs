@@ -12,8 +12,16 @@ public class Level : MonoBehaviour
 
     public void EndLevel()
     {
-        isRunning = false;
-        ResetLevel();
+        foreach (Human human in FindObjectsOfType<Human>())
+        {
+            if (!human.asleep)
+            {
+                isRunning = false;
+                ResetLevel();
+                return;
+            }
+        }
+        // TODO Display a YOU WIN MESSAGE!
     }
 
     public void ResetLevel()
