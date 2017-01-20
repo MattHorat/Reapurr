@@ -5,7 +5,6 @@ public class InputController : MonoBehaviour {
     public KeyCode down;
     public KeyCode left;
     public KeyCode right;
-    public GameObject playerCharacter;
     public float speed;
 
     // Update is called once per frame
@@ -27,6 +26,6 @@ public class InputController : MonoBehaviour {
         {
             velocity += Vector2.right;
         }
-        playerCharacter.GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
+        GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
     }
 }
