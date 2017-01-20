@@ -22,6 +22,7 @@ public class ActionQueue : MonoBehaviour
         }
         actions.First.Value.Action();
         actions.RemoveFirst();
+        Debug.Log(actions.Count);
         if (actionQueue.Count == 0)
         {
             NextAction();
@@ -39,7 +40,14 @@ public class ActionQueue : MonoBehaviour
 
     public void AddYawnTarget(Human human)
     {
-        actions.AddAfter(actions.First, human);
+        if (actions.Count > 0)
+        {
+            actions.AddAfter(actions.First, human);
+        }
+        else
+        {
+            actions.AddFirst(human);
+        }
     }
 
     public void AddAction(Actionable action)
