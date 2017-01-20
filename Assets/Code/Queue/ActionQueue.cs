@@ -1,38 +1,49 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ActionQueue : MonoBehaviour
 {
-    private Queue<Actionable> actionQueue = new Queue<Actionable>();
-    private Human nextYawn;
-    private bool yawn = true;
+    private List<MonoBehaviour> actionQueue = new List<MonoBehaviour>();
+    private LinkedList<Actionable> actions = new LinkedList<Actionable>();
 
-    public void AddActionable(Actionable action)
+    public void AddActionable(MonoBehaviour action)
     {
-        actionQueue.Enqueue(action);
+        actionQueue.Add(action);
     }
 
     public void NextAction()
     {
-        if (yawn)
+        if (actions.Count == 0)
         {
-            if (nextYawn.asleep)
-            {
-                // Level is lost, we either propagated to a sleeping yawn target, or we didn't hit anyone
-                FindObjectOfType<Level>().EndLevel();
-                return;
-            }
-            nextYawn.Yawn();
+            // Level is lost, ran out of actions
+            FindObjectOfType<Level>().EndLevel();
+            return;
         }
-        else
+        actions.First.Value.Action();
+        actions.RemoveFirst();
+        if (actionQueue.Count == 0)
         {
-            actionQueue.Dequeue().Action();
+            NextAction();
         }
-        yawn = !yawn;
+    }
+
+    public void MarkComplete(MonoBehaviour action)
+    {
+        actionQueue.Remove(action);
+        if (actionQueue.Count == 0)
+        {
+            NextAction();
+        }
     }
 
     public void AddYawnTarget(Human human)
     {
-        nextYawn = human;
+        actions.AddAfter(actions.First, human);
+    }
+
+    public void AddAction(Actionable action)
+    {
+        actions.AddLast(action);
     }
 }

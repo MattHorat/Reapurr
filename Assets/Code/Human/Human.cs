@@ -1,23 +1,23 @@
 ﻿using UnityEngine;
 
-public class Human : MonoBehaviour {
+public class Human : Actionable {
     public float speed;
     public GameObject yawnPrefab;
     public bool asleep = false;
-
-    private Vector2 targetPosition;
+    
+    private Vector2 startPosition;
 
     private void Start()
     {
-        targetPosition = transform.position;
+        startPosition = transform.position;
+        FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
 
     private void Update ()
     {
-        GetComponent<Rigidbody2D>().position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Yawn();
+            FindObjectOfType<ActionQueue>().NextAction();
         }
     }
 
@@ -42,7 +42,10 @@ public class Human : MonoBehaviour {
     {
         if (HasLineOfSight(targetObject))
         {
-            targetPosition = targetObject.transform.position;
+            HumanMovement movement = gameObject.AddComponent<HumanMovement>();
+            movement.targetPosition = targetObject.transform.position;
+            movement.speed = speed;
+            FindObjectOfType<ActionQueue>().AddActionable(movement);
         }
     }
 
@@ -65,13 +68,19 @@ public class Human : MonoBehaviour {
         }
     }
 
-    public void Yawn()
+    public override void Action()
     {
         if (!asleep)
         {
             Yawn yawn = Instantiate(yawnPrefab, transform.position, transform.rotation).GetComponent<Yawn>();
+            FindObjectOfType<ActionQueue>().AddActionable(yawn);
             yawn.creator = gameObject;
             asleep = true;
         }
+    }
+
+    public void ResetToStart()
+    {
+        transform.position = startPosition;
     }
 }

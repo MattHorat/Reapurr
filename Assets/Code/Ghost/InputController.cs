@@ -33,12 +33,9 @@ public class InputController : MonoBehaviour {
 
         if (Input.GetKey(interact))
         {
-            Debug.Log("test");
             Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
-            Debug.Log(hitColliders.Length);
             foreach(Collider2D hitCollider in hitColliders)
             {
-                Debug.Log(hitCollider);
                 if(hitCollider.gameObject != this.gameObject)
                 {
                     hitCollider.gameObject.GetComponent<ObjectController>().LockInObject();

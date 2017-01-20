@@ -1,17 +1,15 @@
 ﻿using UnityEngine;
 
-public class SoundMovementAttractor : MonoBehaviour {
-    private void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Attract();
-        }
+public class SoundMovementAttractor : Actionable {
+    private void Start () {
+        FindObjectOfType<ActionQueue>().AddAction(this);
     }
 
-    public void Attract()
+    public override void Action()
     {
         Human[] humans = GameObject.FindObjectsOfType<Human>();
-        foreach(Human human in humans)
+        
+        foreach (Human human in humans)
         {
             human.SetMoveTarget(gameObject);
         }

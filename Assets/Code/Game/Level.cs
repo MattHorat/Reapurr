@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Level : MonoBehaviour
 {
@@ -12,5 +13,11 @@ public class Level : MonoBehaviour
     public void EndLevel()
     {
         isRunning = false;
+        ResetLevel();
+    }
+
+    public void ResetLevel()
+    {
+        new List<Human>(FindObjectsOfType<Human>()).ForEach(human => human.ResetToStart());
     }
 }
