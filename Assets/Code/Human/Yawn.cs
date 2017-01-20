@@ -19,13 +19,13 @@ public class Yawn : MonoBehaviour
             {
                 return;
             }
-            ActionQueue actionQueue = FindObjectOfType<ActionQueue>();
-            actionQueue.AddYawnTarget(human);
-            actionQueue.MarkComplete(this);
         }
         if (other.CompareTag("Wall") || other.CompareTag("Human"))
         {
             Destroy(gameObject);
+            ActionQueue actionQueue = FindObjectOfType<ActionQueue>();
+            actionQueue.AddYawnTarget(human);
+            actionQueue.MarkComplete(this);
         }
     }
 }

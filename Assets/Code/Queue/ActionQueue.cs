@@ -14,8 +14,7 @@ public class ActionQueue : MonoBehaviour
 
     public void NextAction()
     {
-
-        if (actions.Count == 0)
+        if (actions.First.Value == null)
         {
             // Level is lost, ran out of actions
             FindObjectOfType<Level>().EndLevel();
@@ -40,7 +39,14 @@ public class ActionQueue : MonoBehaviour
 
     public void AddYawnTarget(Human human)
     {
-        actions.AddAfter(actions.First, human);
+        if (actions.Count > 0)
+        {
+            actions.AddAfter(actions.First, human);
+        }
+        else
+        {
+            actions.AddFirst(human);
+        }
     }
 
     public void AddAction(Actionable action)
