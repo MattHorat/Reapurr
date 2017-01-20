@@ -3,9 +3,9 @@
 public class Human : MonoBehaviour {
     public float speed;
     public GameObject yawnPrefab;
+    public bool asleep = false;
 
     private Vector2 targetPosition;
-    private bool asleep = false;
 
     private void Start()
     {
