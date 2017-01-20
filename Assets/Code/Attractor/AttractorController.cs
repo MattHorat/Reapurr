@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ObjectController : MonoBehaviour {
+public class AttractorController : MonoBehaviour {
 
     public bool hasBeenSelected;
     private GameObject mainScreen;
@@ -15,11 +15,12 @@ public class ObjectController : MonoBehaviour {
     }
 
 
-    public void LockInObject()
+    public void InteractAttractor()
     {
         if (!hasBeenSelected)
         {
-            mainScreen.GetComponentInChildren<LockSystem>().ClickObject(objectName);
+            mainScreen.GetComponentInChildren<LockSystem>().AssignAttractor(gameObject);
+            FindObjectOfType<ActionQueue>().AddAction(GetComponent<Actionable>());
             hasBeenSelected = true;
         }
     }

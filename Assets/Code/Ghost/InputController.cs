@@ -38,7 +38,7 @@ public class InputController : MonoBehaviour {
             {
                 if(hitCollider.gameObject != this.gameObject)
                 {
-                    hitCollider.gameObject.GetComponent<ObjectController>().LockInObject();
+                    hitCollider.gameObject.GetComponent<AttractorController>().InteractAttractor();
                 }
             }
         }

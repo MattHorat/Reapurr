@@ -15,10 +15,10 @@ public class Human : Actionable {
 
     private void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            FindObjectOfType<ActionQueue>().NextAction();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    FindObjectOfType<ActionQueue>().NextAction();
+        //}
     }
 
     private bool HasLineOfSight(GameObject targetObject)
