@@ -2,18 +2,23 @@
 
 public class Human : MonoBehaviour {
     public float speed;
+    public GameObject yawnPrefab;
 
     private Vector2 targetPosition;
-    public GameObject targetObject;
+    private bool asleep = false;
 
     private void Start()
     {
         targetPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update () {
+    private void Update ()
+    {
         GetComponent<Rigidbody2D>().position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Yawn();
+        }
     }
 
     private bool HasLineOfSight(GameObject targetObject)
@@ -57,6 +62,16 @@ public class Human : MonoBehaviour {
                 float rotation = (localPositionTarget.y > 0) ? 180 : -180;
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
+        }
+    }
+
+    public void Yawn()
+    {
+        if (!asleep)
+        {
+            Yawn yawn = Instantiate(yawnPrefab, transform.position, transform.rotation).GetComponent<Yawn>();
+            yawn.creator = gameObject;
+            asleep = true;
         }
     }
 }
