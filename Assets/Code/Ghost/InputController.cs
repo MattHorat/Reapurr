@@ -5,7 +5,10 @@ public class InputController : MonoBehaviour {
     public KeyCode down;
     public KeyCode left;
     public KeyCode right;
+    public KeyCode interact;
+    public GameObject playerCharacter;
     public float speed;
+    private float interactRadius = 1F;
 
     // Update is called once per frame
     void Update () {
@@ -27,5 +30,21 @@ public class InputController : MonoBehaviour {
             velocity += Vector2.right;
         }
         GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
+
+        if (Input.GetKey(interact))
+        {
+            Debug.Log("test");
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
+            Debug.Log(hitColliders.Length);
+            foreach(Collider2D hitCollider in hitColliders)
+            {
+                Debug.Log(hitCollider);
+                if(hitCollider.gameObject != this.gameObject)
+                {
+                    hitCollider.gameObject.GetComponent<ObjectController>().LockInObject();
+                }
+            }
+        }
+        playerCharacter.GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
     }
 }
