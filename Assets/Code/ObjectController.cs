@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class ObjectController : MonoBehaviour {
 
-    private float detectionRange = 2.0F;
-    private bool isCloseEnough;
     public bool hasBeenSelected;
-    public Text testText;
     private GameObject mainScreen;
     public string objectName;
 
