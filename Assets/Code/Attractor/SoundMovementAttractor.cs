@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 
-public class SoundMovementAttractor : Actionable {
+public class SoundMovementAttractor : Actionable 
+{
+    public void Update()
+    {
+        GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100);
+    }
 
     public override void Action()
     {
