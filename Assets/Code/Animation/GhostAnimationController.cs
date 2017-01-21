@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class GhostAnimationController : MonoBehaviour
 {
-
-
-
     public void GhostDisappear()
     {
         FindObjectOfType<InputController>().gameObject.GetComponent<SpriteRenderer>().enabled = false;
