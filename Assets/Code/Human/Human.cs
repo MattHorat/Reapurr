@@ -6,9 +6,11 @@ public class Human : Actionable {
     public bool asleep = false;
     
     private Vector2 startPosition;
+    private Quaternion startRotation;
 
     private void Start()
     {
+        startRotation = transform.rotation;
         startPosition = transform.position;
         //FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
@@ -70,12 +72,12 @@ public class Human : Actionable {
             // If we are closer to the x axis, face based on x, otherwise y
             if (Mathf.Abs(localPositionTarget.x) > Mathf.Abs(localPositionTarget.y))
             {
-                float rotation = (localPositionTarget.x > 0) ? 90 : -90;
+                float rotation = (localPositionTarget.x > 0) ? 0 : 180;
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
             else
             {
-                float rotation = (localPositionTarget.y > 0) ? 180 : -180;
+                float rotation = (localPositionTarget.y > 0) ? 90 : 270;
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
         }
@@ -95,6 +97,7 @@ public class Human : Actionable {
     public void ResetToStart()
     {
         transform.position = startPosition;
+        transform.rotation = startRotation;
         asleep = false;
     }
 

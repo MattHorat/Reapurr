@@ -7,7 +7,7 @@ public class Yawn : MonoBehaviour
 
     private void Update()
     {
-        GetComponent<Rigidbody2D>().position = Vector2.MoveTowards(transform.position, transform.position + transform.forward * 10, speed * Time.deltaTime);
+        GetComponent<Rigidbody2D>().position = Vector2.MoveTowards(transform.position, transform.position + transform.right * 10, speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

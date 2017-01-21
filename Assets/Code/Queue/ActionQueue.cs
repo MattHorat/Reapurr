@@ -18,6 +18,8 @@ public class ActionQueue : MonoBehaviour
         {
             // Level is lost, ran out of actions
             FindObjectOfType<Level>().EndLevel();
+            actionQueue = new List<MonoBehaviour>();
+            actions = new LinkedList<Actionable>();
             return;
         }
         actions.First.Value.Action();
@@ -53,5 +55,4 @@ public class ActionQueue : MonoBehaviour
     {
         actions.AddLast(action);
     }
-
 }

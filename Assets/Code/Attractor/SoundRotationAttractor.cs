@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 
-public class SoundRotationAttractor : MonoBehaviour {
-    public void Attract()
+public class SoundRotationAttractor : Actionable {
+    public override void Action()
     {
         Human[] humans = GameObject.FindObjectsOfType<Human>();
         foreach(Human human in humans)
         {
             human.FaceTarget(gameObject);
         }
-        FindObjectOfType<ActionQueue>().NextAction();
     }
 }
