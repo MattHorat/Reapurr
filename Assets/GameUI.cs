@@ -59,6 +59,7 @@ public class GameUI : MonoBehaviour {
         timeMarker.rectTransform.localPosition = intialMarkerPosition;
         buttonTry.interactable = true;
         count = 0;
+        FindObjectOfType<InputController>().GetComponent<Animator>().SetTrigger("Reset");
     }
 
     public void ClickTry()
