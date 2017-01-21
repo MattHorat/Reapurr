@@ -15,5 +15,6 @@ public class SoundRotationAttractor : MonoBehaviour {
         {
             human.FaceTarget(gameObject);
         }
+        FindObjectOfType<ActionQueue>().NextAction();
     }
 }

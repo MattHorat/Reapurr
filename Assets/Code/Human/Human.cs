@@ -57,6 +57,7 @@ public class Human : Actionable {
             movement.targetPosition = (Vector2)targetObject.transform.position + addedPosition;
             movement.speed = speed;
             FindObjectOfType<ActionQueue>().AddActionable(movement);
+            FaceTarget(targetObject);
         }
     }
 
