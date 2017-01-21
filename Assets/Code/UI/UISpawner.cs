@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class UISpawner : MonoBehaviour {
 
-    public GameObject GameUIPrefab;
-
+    public GameObject gameUIPrefab;
 
     // Use this for initialization
-    private void Start()
+
+    public void SpawnGameUI()
     {
-        Instantiate(GameUIPrefab);
+        Instantiate(gameUIPrefab);
     }
 }

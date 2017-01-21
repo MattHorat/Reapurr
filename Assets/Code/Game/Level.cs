@@ -36,6 +36,7 @@ public class Level : MonoBehaviour
         currentLevel++;
         levels[currentLevel].SetActive(true);
         FindObjectOfType<ActionQueue>().ResetActionQueues();
+        FindObjectOfType<InputController>().transform.position = new Vector2(0, 0);
         FindObjectOfType<GameUI>().ResetUI();
     }
 
