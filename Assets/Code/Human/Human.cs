@@ -42,8 +42,18 @@ public class Human : Actionable {
     {
         if (HasLineOfSight(targetObject))
         {
+            Vector2 localPositionTarget = targetObject.transform.position - gameObject.transform.position;
+            Vector2 addedPosition;
+            if (Mathf.Abs(localPositionTarget.x) > Mathf.Abs(localPositionTarget.y))
+            {
+                addedPosition = (localPositionTarget.x > 0) ? Vector2.left : Vector2.right; 
+            }
+            else
+            {
+                addedPosition = (localPositionTarget.x > 0) ? Vector2.up : Vector2.down;
+            }
             HumanMovement movement = gameObject.AddComponent<HumanMovement>();
-            movement.targetPosition = targetObject.transform.position;
+            movement.targetPosition = (Vector2)targetObject.transform.position + addedPosition;
             movement.speed = speed;
             FindObjectOfType<ActionQueue>().AddActionable(movement);
         }
