@@ -15,6 +15,9 @@ public class GameUI : MonoBehaviour {
     public Button buttonTry;
     private Color32 originalColour;
 
+    public Image notOnImage;
+    bool isMusicPlaying = true;
+
 
     public void Start()
     {
@@ -98,5 +101,21 @@ public class GameUI : MonoBehaviour {
         }
         yield return new WaitForSeconds(0.2F);
         FindObjectOfType<ActionQueue>().NextAction();
+    }
+
+    public void ClickSoundButton()
+    {
+        if (isMusicPlaying)
+        {
+            FindObjectOfType<AudioSource>().Pause();
+            notOnImage.enabled = true;
+            isMusicPlaying = false;
+        }
+        else
+        {
+            FindObjectOfType<AudioSource>().Play();
+            notOnImage.enabled = false;
+            isMusicPlaying = true;
+        }
     }
 }
