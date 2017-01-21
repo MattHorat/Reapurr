@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: bf41e29a3ffaf354bb22c3540cecadb3
+timeCreated: 1484954353
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ghost_0001_right-4
+    21300002: ghost_0002_right-3
+    21300004: ghost_0003_right-2
+    21300006: ghost_0004_right-1
+    21300008: ghost_0005_left-4
+    21300010: ghost_0005_possess-5
+    21300012: ghost_0006_left-3
+    21300014: ghost_0006_possess-4
+    21300016: ghost_0007_left-2
+    21300018: ghost_0007_possess-3
+    21300020: ghost_0008_left-1
+    21300022: ghost_0008_possess-2
+    21300024: ghost_0009_back-4
+    21300026: ghost_0009_possess-1
+    21300028: ghost_0010_back-3
+    21300030: ghost_0011_back-2
+    21300032: ghost_0012_back-1
+    21300034: ghost_0013_front-4
+    21300036: ghost_0014_front-3
+    21300038: ghost_0015_front-2
+    21300040: ghost_0016_front-1
+    21300042: ghost-front-01
+    21300044: ghost-front-02
+    21300046: ghost-front-03
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ghost-front-01
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 658
+        width: 336
+        height: 410
+      alignment: 9
+      pivot: {x: 0.38988096, y: 0.48292682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost-front-02
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1645
+        width: 310
+        height: 402
+      alignment: 9
+      pivot: {x: 0.42580646, y: 0.47014925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost-front-03
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1645
+        width: 308
+        height: 402
+      alignment: 9
+      pivot: {x: 0.42532468, y: 0.47263682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0001_right-4
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1721
+        width: 471
+        height: 326
+      alignment: 9
+      pivot: {x: 0.49893844, y: 0.5245399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0002_right-3
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 111
+        width: 448
+        height: 311
+      alignment: 9
+      pivot: {x: 0.4732143, y: 0.49196142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0003_right-2
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1393
+        width: 471
+        height: 326
+      alignment: 9
+      pivot: {x: 0.49893844, y: 0.5245399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0004_right-1
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 840
+        width: 465
+        height: 321
+      alignment: 9
+      pivot: {x: 0.49462366, y: 0.47975078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0005_left-4
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1070
+        width: 463
+        height: 321
+      alignment: 9
+      pivot: {x: 0.45572355, y: 0.5140187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0005_possess-5
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1484
+        width: 169
+        height: 159
+      alignment: 9
+      pivot: {x: 0.62721896, y: 0.3018868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0006_left-3
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 111
+        width: 448
+        height: 311
+      alignment: 9
+      pivot: {x: 0.46875, y: 0.49196142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0006_possess-4
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 446
+        width: 391
+        height: 299
+      alignment: 9
+      pivot: {x: 0.4961637, y: 0.5618729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0007_left-2
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 747
+        width: 463
+        height: 321
+      alignment: 9
+      pivot: {x: 0.45572355, y: 0.5140187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0007_possess-3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1070
+        width: 477
+        height: 483
+      alignment: 9
+      pivot: {x: 0.49685535, y: 0.47204968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0008_left-1
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 424
+        width: 450
+        height: 321
+      alignment: 9
+      pivot: {x: 0.46666667, y: 0.47663552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0008_possess-2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 136
+        width: 434
+        height: 440
+      alignment: 9
+      pivot: {x: 0.4170507, y: 0.5181818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0009_back-4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 85
+        width: 241
+        height: 487
+      alignment: 9
+      pivot: {x: 0.526971, y: 0.52156055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0009_possess-1
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1163
+        width: 382
+        height: 407
+      alignment: 9
+      pivot: {x: 0.34293193, y: 0.4791155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0010_back-3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1064
+        width: 276
+        height: 489
+      alignment: 9
+      pivot: {x: 0.5036232, y: 0.5194274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0011_back-2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 578
+        width: 263
+        height: 484
+      alignment: 9
+      pivot: {x: 0.46387833, y: 0.5268595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0012_back-1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1570
+        width: 247
+        height: 477
+      alignment: 9
+      pivot: {x: 0.45748988, y: 0.5136268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0013_front-4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 574
+        width: 254
+        height: 488
+      alignment: 9
+      pivot: {x: 0.4448819, y: 0.48155737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0014_front-3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1555
+        width: 279
+        height: 492
+      alignment: 9
+      pivot: {x: 0.50179213, y: 0.48577237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0015_front-2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 86
+        width: 265
+        height: 486
+      alignment: 9
+      pivot: {x: 0.49056605, y: 0.47942388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ghost_0016_front-1
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1572
+        width: 270
+        height: 475
+      alignment: 9
+      pivot: {x: 0.47037038, y: 0.49052632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
