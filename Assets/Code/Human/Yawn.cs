@@ -4,6 +4,12 @@ public class Yawn : MonoBehaviour
 {
     public float speed;
     public GameObject creator;
+    public AudioClip[] yawnSounds;
+
+    private void Start()
+    {
+        FindObjectOfType<AudioSource>().PlayOneShot(yawnSounds[Random.Range(0, yawnSounds.Length)]);
+    }
 
     private void FixedUpdate()
     {
@@ -26,7 +32,6 @@ public class Yawn : MonoBehaviour
             Destroy(gameObject, 0.3F);
             GetComponent<Collider2D>().enabled = false;
             ActionQueue actionQueue = FindObjectOfType<ActionQueue>();
-            //actionQueue.AddYawnTarget(human);
             actionQueue.MarkComplete(this);
         }
     }
