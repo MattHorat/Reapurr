@@ -8,7 +8,7 @@ public class Yawn : MonoBehaviour
 
     private void Start()
     {
-        FindObjectOfType<AudioSource>().PlayOneShot(yawnSounds[Random.Range(0, yawnSounds.Length)]);
+       GameObject.Find("SoundEffects").GetComponent<AudioSource>().PlayOneShot(yawnSounds[Random.Range(0, yawnSounds.Length)]);
     }
 
     private void FixedUpdate()

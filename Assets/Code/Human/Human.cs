@@ -4,6 +4,7 @@ public class Human : Actionable {
     public float speed;
     public GameObject yawnPrefab;
     public bool asleep = false;
+    public AudioClip[] exclamationSounds;
     
     private Vector2 startPosition;
     private Quaternion startRotation;
@@ -60,6 +61,7 @@ public class Human : Actionable {
     {
         if (!asleep && HasLineOfSight(targetObject))
         {
+            GetComponent<AudioSource>().PlayOneShot(exclamationSounds[Random.Range(0, exclamationSounds.Length)]);
             Vector2 localPositionTarget = targetObject.transform.position - gameObject.transform.position;
             // If we are closer to the x axis, face based on x, otherwise y
             if (Mathf.Abs(localPositionTarget.x) > Mathf.Abs(localPositionTarget.y))

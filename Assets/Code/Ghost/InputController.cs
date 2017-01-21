@@ -12,6 +12,7 @@ public class InputController : MonoBehaviour {
     public YawnController yawnController;
     private Vector2 velocity = Vector2.zero;
     public bool isPossessing;
+    public AudioClip disappearSound;
 
     private void Update () {
         velocity = Vector2.zero;
@@ -65,6 +66,7 @@ public class InputController : MonoBehaviour {
                             playerCharacter.GetComponent<Animator>().SetTrigger("Possess");
                             FindObjectOfType<InputController>().GetComponent<Animator>().SetBool("isPossessing", true);
                             isPossessing = true;
+                            GetComponent<AudioSource>().PlayOneShot(disappearSound);
                         }
                     }
                 }
