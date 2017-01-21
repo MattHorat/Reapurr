@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Level : MonoBehaviour
@@ -12,7 +13,7 @@ public class Level : MonoBehaviour
         {
             if (!human.asleep && FindObjectOfType<YawnController>().currentYawn != human)
             {
-                ResetLevel();
+                StartCoroutine(Timer());
                 return;
             }
         }
@@ -34,5 +35,11 @@ public class Level : MonoBehaviour
         levels[currentLevel].SetActive(true);
         FindObjectOfType<ActionQueue>().ResetActionQueues();
         FindObjectOfType<GameUI>().ResetUI();
+    }
+
+    private IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(1.0F);
+        ResetLevel();
     }
 }
