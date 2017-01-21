@@ -35,6 +35,13 @@ public class GameUI : MonoBehaviour {
         ResetUI();
     }
 
+    public void AssignYawn()
+    {
+        lockImages[count].color = Color.green;
+        lockImages[count].GetComponentInChildren<Text>().text = "Yawn";
+        count++;
+    }
+
     public void ResetUI()
     {
         foreach (Image lockImage in lockImages)

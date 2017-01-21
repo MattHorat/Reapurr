@@ -66,6 +66,7 @@ public class InputController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Return))
         {
             FindObjectOfType<ActionQueue>().AddAction(yawnController);
+            FindObjectOfType<GameUI>().AssignYawn();
         }
     }
 }
