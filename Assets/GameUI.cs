@@ -53,9 +53,11 @@ public class GameUI : MonoBehaviour {
 
     public void ClickTry()
     {
-        //do this as when you go and select a character to start the yawn
-        buttonTry.interactable = false;
-        FindObjectOfType<ActionQueue>().NextAction();
+        if (FindObjectOfType<YawnController>().currentYawn != null)
+        {
+            buttonTry.interactable = false;
+            FindObjectOfType<ActionQueue>().NextAction();
+        }
     }
 
     public void ShowWinScreen()

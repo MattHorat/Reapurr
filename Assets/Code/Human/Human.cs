@@ -43,18 +43,19 @@ public class Human : Actionable {
 
     public void SetMoveTarget(GameObject targetObject)
     {
-        if (HasLineOfSight(targetObject))
+        if (!asleep && HasLineOfSight(targetObject))
         {
             Vector2 localPositionTarget = targetObject.transform.position - gameObject.transform.position;
             Vector2 addedPosition;
             // We want to offset our position by an amount
             if (Mathf.Abs(localPositionTarget.x) > Mathf.Abs(localPositionTarget.y))
             {
-                addedPosition = (localPositionTarget.x > 0) ? Vector2.left : Vector2.right; 
+
+                addedPosition = (localPositionTarget.x > 0) ? Vector2.left : Vector2.right;
             }
             else
             {
-                addedPosition = (localPositionTarget.x > 0) ? Vector2.up : Vector2.down;
+                addedPosition = (localPositionTarget.y > 0) ? Vector2.down : Vector2.up;
             }
             HumanMovement movement = gameObject.AddComponent<HumanMovement>();
             movement.targetPosition = (Vector2)targetObject.transform.position + addedPosition;
@@ -66,7 +67,7 @@ public class Human : Actionable {
 
     public void FaceTarget(GameObject targetObject)
     {
-        if (HasLineOfSight(targetObject))
+        if (!asleep && HasLineOfSight(targetObject))
         {
             Vector2 localPositionTarget = targetObject.transform.position - gameObject.transform.position;
             // If we are closer to the x axis, face based on x, otherwise y
@@ -103,6 +104,6 @@ public class Human : Actionable {
 
     public void GhostInteracts()
     {
-        FindObjectOfType<ActionQueue>().AddYawnTarget(this);
+        //FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
 }

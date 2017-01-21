@@ -29,6 +29,7 @@ public class Level : MonoBehaviour
     {
         new List<Human>(FindObjectsOfType<Human>()).ForEach(human => human.ResetToStart());
         FindObjectOfType<InputController>().GetComponent<SpriteRenderer>().enabled = true;
+        FindObjectOfType<InputController>().yawnController.currentYawn = null;
         FindObjectOfType<GameUI>().ResetUI();
     }
 }
