@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameUI : MonoBehaviour 
-{
+public class GameUI : MonoBehaviour {
+
     public Image[] lockImages;
     public Image[] yawnImages;
     public Image timeMarker;
@@ -19,7 +19,7 @@ public class GameUI : MonoBehaviour
     public void Start()
     {
         attractors = GameObject.FindGameObjectsWithTag("Attractor");
-        intialMarkerPosition = timeMarker.transform.position;
+        intialMarkerPosition = timeMarker.rectTransform.localPosition;
         originalColour = lockImages[0].color;
     }
 
@@ -33,6 +33,7 @@ public class GameUI : MonoBehaviour
     public void ClickClear()
     {
         ResetUI();
+        FindObjectOfType<ActionQueue>().ResetActionQueues();
     }
 
     public void AssignYawn()
@@ -53,7 +54,7 @@ public class GameUI : MonoBehaviour
         {
             interactableObject.GetComponent<AttractorController>().hasBeenSelected = false;
         }
-        timeMarker.transform.position = intialMarkerPosition;
+        timeMarker.rectTransform.localPosition = intialMarkerPosition;
         buttonTry.interactable = true;
         count = 0;
     }
@@ -87,14 +88,15 @@ public class GameUI : MonoBehaviour
     {
         float duration = .8F;
         float elapsedTime = 0.0F;
-        Vector2 currentPosition = timeMarker.transform.position;
+        Vector2 currentPosition = timeMarker.rectTransform.localPosition;
         Vector2 newPosition = new Vector2(currentPosition.x + 130, currentPosition.y);
         while(duration > elapsedTime)
         {
-            timeMarker.transform.position = Vector2.Lerp(currentPosition, newPosition, (elapsedTime / duration));
+            timeMarker.rectTransform.localPosition = Vector2.Lerp(currentPosition, newPosition, (elapsedTime / duration));
             elapsedTime += Time.deltaTime;
             yield return new WaitForFixedUpdate();
         }
+        yield return new WaitForSeconds(0.2F);
         FindObjectOfType<ActionQueue>().NextAction();
     }
 }
