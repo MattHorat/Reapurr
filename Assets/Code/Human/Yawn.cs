@@ -5,7 +5,7 @@ public class Yawn : MonoBehaviour
     public float speed;
     public GameObject creator;
 
-    private void Update()
+    private void FixedUpdate()
     {
         GetComponent<Rigidbody2D>().position = Vector2.MoveTowards(transform.position, transform.position + transform.right * 10, speed * Time.deltaTime);
     }

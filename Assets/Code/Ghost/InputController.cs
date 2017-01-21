@@ -10,11 +10,11 @@ public class InputController : MonoBehaviour {
     public float speed;
     private float interactRadius = 0.5F;
     public YawnController yawnController;
+    private Vector2 velocity = Vector2.zero;
 
-    // Update is called once per frame
-    void Update () {
+    private void Update () {
         GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100);
-        Vector2 velocity = Vector2.zero;
+        velocity = Vector2.zero;
 		if (Input.GetKey(up))
         {
             velocity += Vector2.up;
@@ -31,7 +31,6 @@ public class InputController : MonoBehaviour {
         {
             velocity += Vector2.right;
         }
-        GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
 
         if (Input.GetKeyDown(interact))
         {
@@ -61,12 +60,21 @@ public class InputController : MonoBehaviour {
                 }
             }
         }
-        playerCharacter.GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
             FindObjectOfType<ActionQueue>().AddAction(yawnController);
             FindObjectOfType<GameUI>().AssignYawn();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.AddForce(velocity.normalized * speed);
+        if (rb.velocity.magnitude > speed)
+        {
+            rb.velocity = rb.velocity.normalized * speed;
         }
     }
 }
