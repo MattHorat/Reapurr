@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: dd6d88e1561ee7b4ca6a2cfa8d064ed6
+timeCreated: 1485007893
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: coffee-machine-1
+    21300002: coffee-machine-2
+    21300004: coffee-machine-3
+    21300006: coffee-machine-4
+    21300008: coffee-machine-5
+    21300010: coffee-machine-6
+    21300012: light-off
+    21300014: light-on
+    21300016: pillar
+    21300018: pot-plant-1
+    21300020: pot-plant-2
+    21300022: pot-plant-3
+    21300024: pot-plant-4
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: coffee-machine-1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 44
+        width: 127
+        height: 152
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.4868421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: coffee-machine-2
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 44
+        width: 127
+        height: 152
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.4868421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: coffee-machine-3
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 871
+        width: 127
+        height: 152
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.4868421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: coffee-machine-4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 871
+        width: 127
+        height: 152
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.4868421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: coffee-machine-5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 871
+        width: 127
+        height: 152
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.4868421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: coffee-machine-6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 198
+        width: 168
+        height: 175
+      alignment: 9
+      pivot: {x: 0.61904764, y: 0.5542857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: light-off
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 59
+        width: 142
+        height: 224
+      alignment: 9
+      pivot: {x: 0.28873238, y: 0.5089286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: light-on
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 285
+        width: 229
+        height: 224
+      alignment: 9
+      pivot: {x: 0.558952, y: 0.50446427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pillar
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 511
+        width: 90
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pot-plant-1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 375
+        width: 219
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5022831, y: 0.5186916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pot-plant-2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 808
+        width: 214
+        height: 215
+      alignment: 9
+      pivot: {x: 0.44392523, y: 0.5023256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pot-plant-3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 67
+        width: 213
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5117371, y: 0.537037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pot-plant-4
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 591
+        width: 214
+        height: 215
+      alignment: 9
+      pivot: {x: 0.44392523, y: 0.5023256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
