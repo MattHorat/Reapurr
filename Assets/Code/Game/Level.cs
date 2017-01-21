@@ -3,20 +3,12 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    private bool isRunning = true;
-
-    private void Update()
-    {
-        // This might display game over or whatever when level not running
-    }
-
     public void EndLevel()
     {
         foreach (Human human in FindObjectsOfType<Human>())
         {
             if (!human.asleep && FindObjectOfType<YawnController>().currentYawn != human)
             {
-                isRunning = false;
                 ResetLevel();
                 return;
             }
