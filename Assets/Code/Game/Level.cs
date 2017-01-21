@@ -14,7 +14,7 @@ public class Level : MonoBehaviour
     {
         foreach (Human human in FindObjectsOfType<Human>())
         {
-            if (!human.asleep)
+            if (!human.asleep && FindObjectOfType<YawnController>().currentYawn != human)
             {
                 isRunning = false;
                 ResetLevel();
