@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainUI : MonoBehaviour {
+public class GameUI : MonoBehaviour {
 
     public Image[] lockImages;
     private int count;
