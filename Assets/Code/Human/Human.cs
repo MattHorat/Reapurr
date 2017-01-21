@@ -92,6 +92,8 @@ public class Human : Actionable {
     {
         transform.position = startPosition;
         transform.rotation = startRotation;
+        var emission = GetComponentInChildren<ParticleSystem>().emission;
+        emission.enabled = false;
         asleep = false;
     }
 

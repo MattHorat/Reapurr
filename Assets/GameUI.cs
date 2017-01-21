@@ -70,15 +70,6 @@ public class GameUI : MonoBehaviour {
         FindObjectOfType<InputController>().isPossessing = false;
     }
 
-    public void ClickTry()
-    {
-        if (FindObjectOfType<YawnController>().currentYawn != null)
-        {
-            buttonTry.interactable = false;
-            FindObjectOfType<ActionQueue>().NextAction();
-        }
-    }
-
     public void ShowWinScreen()
     {
         panelWin.SetActive(true);
@@ -115,6 +106,19 @@ public class GameUI : MonoBehaviour {
         }
         yield return new WaitForSeconds(0.2F);
         FindObjectOfType<ActionQueue>().NextAction();
+    }
+
+    private IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(0.5F);
+        Animator anim = FindObjectOfType<Animator>();
+        if (anim.GetBool("isPossessing"))
+        {
+            anim.SetBool("isPossessing", false);
+            anim.SetTrigger("Reset");
+        }
+        anim.GetComponent<SpriteRenderer>().enabled = true;
+        FindObjectOfType<InputController>().isPossessing = false;
     }
 
     public void ClickSoundButton()

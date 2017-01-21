@@ -15,6 +15,8 @@ public class YawnController : Actionable
             FindObjectOfType<ActionQueue>().AddActionable(yawn);
             yawn.creator = currentYawn.gameObject;
             currentYawn.asleep = true;
+            var emission = currentYawn.GetComponentInChildren<ParticleSystem>().emission;
+            emission.enabled = true;
         }
     }
 }
