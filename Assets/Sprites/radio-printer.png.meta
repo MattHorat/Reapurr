@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 7e0b5cddc4bd9894c9c241ce4a594560
+timeCreated: 1485032483
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: radio-printer_0
+    21300002: radio-printer_1
+    21300004: radio-printer_2
+    21300006: radio-printer_3
+    21300008: radio-printer_4
+    21300010: radio-printer_5
+    21300012: radio-printer_6
+    21300014: radio-printer_7
+    21300016: radio-printer_8
+    21300018: radio-printer_9
+    21300020: radio-printer_10
+    21300022: radio-printer_11
+    21300024: radio-printer_12
+    21300026: radio-printer_13
+    21300028: radio-printer_17
+    21300030: radio-printer_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: radio-printer_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 668
+        width: 412
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_1
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 664
+        width: 119
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 668
+        width: 121
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 456
+        width: 400
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_4
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 596
+        width: 322
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_5
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 528
+        width: 322
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 173
+        width: 192
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 183
+        width: 192
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_8
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 326
+        width: 192
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_9
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 58
+        width: 30
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 35
+        width: 400
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_11
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 156
+        width: 278
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_12
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 80
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_13
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 57
+        width: 72
+        height: 72
+      alignment: 9
+      pivot: {x: 0.47566733, y: 0.4736396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_17
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 64
+        width: 72
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: radio-printer_23
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 19
+        width: 301
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
