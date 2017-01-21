@@ -59,7 +59,6 @@ public class GameUI : MonoBehaviour {
             interactableObject.GetComponent<AttractorController>().hasBeenSelected = false;
         }
         timeMarker.rectTransform.localPosition = intialMarkerPosition;
-        buttonTry.interactable = true;
         count = 0;
         Animator anim = FindObjectOfType<Animator>();
         if(anim.GetBool("isPossessing"))
