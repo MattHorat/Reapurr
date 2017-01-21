@@ -17,6 +17,22 @@ TextureImporter:
     21300020: pot-plant-2
     21300022: pot-plant-3
     21300024: pot-plant-4
+    21300026: printer-base
+    21300028: printer-blank-paper
+    21300030: printer-front
+    21300032: printer-paper-stack
+    21300034: printer-paper
+    21300036: radio_0000_dial
+    21300038: radio_0000s_0000_speakers-R
+    21300040: radio_0000s_0001_speakers-L
+    21300042: radio_0001_numbers
+    21300044: radio_0002_tuning-on
+    21300046: radio_0003_tuning
+    21300048: radio_0003s_0000_dial-R
+    21300050: radio_0004_radio-body
+    21300052: radio_0004s_0000_dial-L
+    21300054: radio_0005_antenna
+    21300056: printer-tray
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -78,8 +94,8 @@ TextureImporter:
       name: coffee-machine-1
       rect:
         serializedVersion: 2
-        x: 360
-        y: 44
+        x: 232
+        y: 739
         width: 127
         height: 152
       alignment: 9
@@ -91,8 +107,8 @@ TextureImporter:
       name: coffee-machine-2
       rect:
         serializedVersion: 2
-        x: 489
-        y: 44
+        x: 93
+        y: 739
         width: 127
         height: 152
       alignment: 9
@@ -104,8 +120,8 @@ TextureImporter:
       name: coffee-machine-3
       rect:
         serializedVersion: 2
-        x: 618
-        y: 871
+        x: 553
+        y: 498
         width: 127
         height: 152
       alignment: 9
@@ -117,8 +133,8 @@ TextureImporter:
       name: coffee-machine-4
       rect:
         serializedVersion: 2
-        x: 453
-        y: 871
+        x: 796
+        y: 478
         width: 127
         height: 152
       alignment: 9
@@ -130,8 +146,8 @@ TextureImporter:
       name: coffee-machine-5
       rect:
         serializedVersion: 2
-        x: 309
-        y: 871
+        x: 566
+        y: 344
         width: 127
         height: 152
       alignment: 9
@@ -143,8 +159,8 @@ TextureImporter:
       name: coffee-machine-6
       rect:
         serializedVersion: 2
-        x: 360
-        y: 198
+        x: 797
+        y: 632
         width: 168
         height: 175
       alignment: 9
@@ -195,8 +211,8 @@ TextureImporter:
       name: pot-plant-1
       rect:
         serializedVersion: 2
-        x: 232
-        y: 375
+        x: 803
+        y: 809
         width: 219
         height: 214
       alignment: 9
@@ -209,7 +225,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 93
-        y: 808
+        y: 522
         width: 214
         height: 215
       alignment: 9
@@ -234,12 +250,220 @@ TextureImporter:
       name: pot-plant-4
       rect:
         serializedVersion: 2
-        x: 93
-        y: 591
+        x: 232
+        y: 305
         width: 214
         height: 215
       alignment: 9
       pivot: {x: 0.44392523, y: 0.5023256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: printer-base
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 562
+        width: 242
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: printer-blank-paper
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 353
+        width: 116
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: printer-front
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 737
+        width: 242
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: printer-paper-stack
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 146
+        width: 116
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: printer-paper
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 197
+        width: 116
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: printer-tray
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 652
+        width: 168
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0000_dial
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0000s_0000_speakers-R
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 619
+        width: 71
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0000s_0001_speakers-L
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 444
+        width: 71
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0001_numbers
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 10
+        width: 177
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0002_tuning-on
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 28
+        width: 193
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0003_tuning
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 36
+        width: 193
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0003s_0000_dial-R
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 5
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0004_radio-body
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 813
+        width: 410
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0004s_0000_dial-L
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 9
+        width: 45
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: radio_0005_antenna
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 893
+        width: 276
+        height: 130
+      alignment: 9
+      pivot: {x: 0.02536232, y: 0.06923077}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
