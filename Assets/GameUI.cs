@@ -12,12 +12,15 @@ public class GameUI : MonoBehaviour {
     private GameObject[] attractors;
     public GameObject panelWin;
     private Vector2 intialMarkerPosition;
+    public Button buttonTry;
+    private Color32 originalColour;
 
 
     public void Start()
     {
         attractors = GameObject.FindGameObjectsWithTag("Attractor");
         intialMarkerPosition = timeMarker.transform.position;
+        originalColour = lockImages[0].color;
     }
 
     public void AssignAttractor(GameObject attractor)
@@ -36,7 +39,7 @@ public class GameUI : MonoBehaviour {
     {
         foreach (Image lockImage in lockImages)
         {
-            lockImage.color = Color.white;
+            lockImage.color = originalColour;
             lockImage.GetComponentInChildren<Text>().text = "";
         }
         foreach (GameObject interactableObject in attractors)
@@ -44,12 +47,14 @@ public class GameUI : MonoBehaviour {
             interactableObject.GetComponent<AttractorController>().hasBeenSelected = false;
         }
         timeMarker.transform.position = intialMarkerPosition;
+        buttonTry.interactable = true;
         count = 0;
     }
 
     public void ClickTry()
     {
         //do this as when you go and select a character to start the yawn
+        buttonTry.interactable = false;
         FindObjectOfType<ActionQueue>().NextAction();
     }
 
@@ -74,7 +79,7 @@ public class GameUI : MonoBehaviour {
         float duration = .8F;
         float elapsedTime = 0.0F;
         Vector2 currentPosition = timeMarker.transform.position;
-        Vector2 newPosition = new Vector2(currentPosition.x + 100, currentPosition.y);
+        Vector2 newPosition = new Vector2(currentPosition.x + 175, currentPosition.y);
         while(duration > elapsedTime)
         {
             timeMarker.transform.position = Vector2.Lerp(currentPosition, newPosition, (elapsedTime / duration));
