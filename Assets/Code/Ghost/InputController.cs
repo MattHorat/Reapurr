@@ -14,7 +14,6 @@ public class InputController : MonoBehaviour {
     public bool isPossessing;
 
     private void Update () {
-        GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100);
         velocity = Vector2.zero;
         if (!isPossessing)
         {

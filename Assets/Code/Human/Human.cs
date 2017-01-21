@@ -15,15 +15,6 @@ public class Human : Actionable {
         //FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
 
-    private void Update ()
-    {
-        GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100);
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    FindObjectOfType<ActionQueue>().NextAction();
-        //}
-    }
-
     private bool HasLineOfSight(GameObject targetObject)
     {
         Vector3 start = transform.position;
