@@ -52,6 +52,11 @@ TextureImporter:
     21300090: ghost-up-02
     21300092: ghost-up-03
     21300094: ghost-up-04
+    21300096: yawn01
+    21300098: yawn02
+    21300100: yawn03
+    21300102: yawn04
+    21300104: yawn05
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -316,7 +321,7 @@ TextureImporter:
       name: ghost-possess-05
       rect:
         serializedVersion: 2
-        x: 252
+        x: 267
         y: 7
         width: 103
         height: 110
@@ -426,6 +431,71 @@ TextureImporter:
         height: 238
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn01
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 14
+        width: 55
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5090909, y: 0.5106383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn02
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 10
+        width: 55
+        height: 51
+      alignment: 9
+      pivot: {x: 0.4909091, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn04
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 9
+        width: 44
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48076922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn05
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 16
+        width: 48
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5208333, y: 0.5555556}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1

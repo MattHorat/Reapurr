@@ -60,7 +60,7 @@ public class GameUI : MonoBehaviour {
         }
         timeMarker.rectTransform.localPosition = intialMarkerPosition;
         count = 0;
-        Animator anim = FindObjectOfType<Animator>();
+        Animator anim = FindObjectOfType<InputController>().GetComponent<Animator>();
         if(anim.GetBool("isPossessing"))
         {
             anim.SetBool("isPossessing", false);
