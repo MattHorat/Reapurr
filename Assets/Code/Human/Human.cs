@@ -44,6 +44,7 @@ public class Human : Actionable {
         {
             Vector2 localPositionTarget = targetObject.transform.position - gameObject.transform.position;
             Vector2 addedPosition;
+            // We want to offset our position by an amount
             if (Mathf.Abs(localPositionTarget.x) > Mathf.Abs(localPositionTarget.y))
             {
                 addedPosition = (localPositionTarget.x > 0) ? Vector2.left : Vector2.right; 
