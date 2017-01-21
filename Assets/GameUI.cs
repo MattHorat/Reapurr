@@ -81,7 +81,7 @@ public class GameUI : MonoBehaviour {
         float duration = .8F;
         float elapsedTime = 0.0F;
         Vector2 currentPosition = timeMarker.transform.position;
-        Vector2 newPosition = new Vector2(currentPosition.x + 175, currentPosition.y);
+        Vector2 newPosition = new Vector2(currentPosition.x + 130, currentPosition.y);
         while(duration > elapsedTime)
         {
             timeMarker.transform.position = Vector2.Lerp(currentPosition, newPosition, (elapsedTime / duration));
