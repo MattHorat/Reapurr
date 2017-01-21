@@ -8,7 +8,8 @@ public class InputController : MonoBehaviour {
     public KeyCode interact;
     public GameObject playerCharacter;
     public float speed;
-    private float interactRadius = 1F;
+    private float interactRadius = 0.5F;
+    public YawnController yawnController;
 
     // Update is called once per frame
     void Update () {
@@ -34,24 +35,37 @@ public class InputController : MonoBehaviour {
 
         if (Input.GetKeyDown(interact))
         {
+            bool foundAttractor = false;
             Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
             foreach(Collider2D hitCollider in hitColliders)
             {
                 if (hitCollider.gameObject != this.gameObject)
                 {
+                    if (hitCollider.CompareTag("Attractor"))
+                    {
+                        foundAttractor = true;
+                        hitCollider.gameObject.GetComponent<AttractorController>().InteractAttractor();
+                    }
+                }
+            }
+            if (!foundAttractor)
+            {
+                foreach (Collider2D hitCollider in hitColliders)
+                {
                     if (hitCollider.CompareTag("Human"))
                     {
                         hitCollider.gameObject.GetComponent<Human>().GhostInteracts();
                         GetComponent<SpriteRenderer>().enabled = false;
+                        yawnController.currentYawn = hitCollider.gameObject.GetComponent<Human>();
                     }
-                    else
-                    {
-                        hitCollider.gameObject.GetComponent<AttractorController>().InteractAttractor();
-                    }
-
                 }
             }
         }
         playerCharacter.GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            FindObjectOfType<ActionQueue>().AddAction(yawnController);
+        }
     }
 }
