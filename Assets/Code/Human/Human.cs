@@ -100,6 +100,6 @@ public class Human : Actionable {
 
     public void GhostInteracts()
     {
-        FindObjectOfType<ActionQueue>().AddYawnTarget(this);
+        FindObjectOfType<ActionQueue>().AddFirstYawnTarget(this);
     }
 }
