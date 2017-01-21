@@ -11,6 +11,7 @@ public class YawnController : Actionable
         {
             yawnSound.Play();
             Yawn yawn = Instantiate(currentYawn.yawnPrefab, currentYawn.transform.position, currentYawn.transform.rotation).GetComponent<Yawn>();
+            yawn.GetComponent<SpriteFader>().FadeInSprite();
             FindObjectOfType<ActionQueue>().AddActionable(yawn);
             yawn.creator = currentYawn.gameObject;
             currentYawn.asleep = true;

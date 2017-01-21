@@ -89,6 +89,8 @@ public class Human : Actionable {
         if (!asleep)
         {
             Yawn yawn = Instantiate(yawnPrefab, transform.position, transform.rotation).GetComponent<Yawn>();
+            Debug.Log("test");
+            yawn.GetComponent<SpriteFader>().FadeInSprite();
             FindObjectOfType<ActionQueue>().AddActionable(yawn);
             yawn.creator = gameObject;
             asleep = true;

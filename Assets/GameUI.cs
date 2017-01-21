@@ -15,6 +15,7 @@ public class GameUI : MonoBehaviour {
     private Color32 originalColour;
 
     public Image notOnImage;
+    private GameObject musicObject;
     bool isMusicPlaying = true;
 
 
@@ -22,6 +23,7 @@ public class GameUI : MonoBehaviour {
     {
         intialMarkerPosition = timeMarker.rectTransform.localPosition;
         originalColour = lockImages[0].color;
+        musicObject = GameObject.FindGameObjectWithTag("Music");
     }
 
     public void AssignAttractor(GameObject attractor)
@@ -113,13 +115,13 @@ public class GameUI : MonoBehaviour {
     {
         if (isMusicPlaying)
         {
-            FindObjectOfType<AudioSource>().Pause();
+            musicObject.GetComponent<AudioSource>().Pause();
             notOnImage.enabled = true;
             isMusicPlaying = false;
         }
         else
         {
-            FindObjectOfType<AudioSource>().Play();
+            musicObject.GetComponent<AudioSource>().Play();
             notOnImage.enabled = false;
             isMusicPlaying = true;
         }
