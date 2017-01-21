@@ -55,4 +55,10 @@ public class ActionQueue : MonoBehaviour
     {
         actions.AddLast(action);
     }
+
+    public void ResetActionQueues()
+    {
+        actionQueue = new List<MonoBehaviour>();
+        actions = new LinkedList<Actionable>();
+    }
 }

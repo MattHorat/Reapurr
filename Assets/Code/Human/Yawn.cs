@@ -23,7 +23,8 @@ public class Yawn : MonoBehaviour
         }
         if (other.CompareTag("Wall") || other.CompareTag("Human"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 0.3F);
+            GetComponent<Collider2D>().enabled = false;
             ActionQueue actionQueue = FindObjectOfType<ActionQueue>();
             //actionQueue.AddYawnTarget(human);
             actionQueue.MarkComplete(this);
