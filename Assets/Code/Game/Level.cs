@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
+    public GameObject[] levels;
+    public int currentLevel;
+
     public void EndLevel()
     {
         foreach (Human human in FindObjectsOfType<Human>())
@@ -13,7 +16,6 @@ public class Level : MonoBehaviour
                 return;
             }
         }
-        // TODO Display a YOU WIN MESSAGE!
         FindObjectOfType<GameUI>().ShowWinScreen();
     }
 
@@ -22,6 +24,15 @@ public class Level : MonoBehaviour
         new List<Human>(FindObjectsOfType<Human>()).ForEach(human => human.ResetToStart());
         FindObjectOfType<InputController>().GetComponent<SpriteRenderer>().enabled = true;
         FindObjectOfType<InputController>().yawnController.currentYawn = null;
+        FindObjectOfType<GameUI>().ResetUI();
+    }
+
+    public void PlayNextLevel()
+    {
+        levels[currentLevel].SetActive(false);
+        currentLevel++;
+        levels[currentLevel].SetActive(true);
+        FindObjectOfType<ActionQueue>().ResetActionQueues();
         FindObjectOfType<GameUI>().ResetUI();
     }
 }
