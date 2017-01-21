@@ -2,7 +2,13 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/Prefabs/Sprites/ghost.tpsheet
+- Assets/Sprites/ghost.tpsheet
+- Assets/Sprites/people.tpsheet
 textureFileNames:
 - Assets/Prefabs/Sprites/ghost.png
+- Assets/Sprites/ghost.png
+- Assets/Sprites/people.png
 normalmapFileNames:
+- 
+- 
 - 
