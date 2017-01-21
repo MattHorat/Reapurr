@@ -108,18 +108,6 @@ public class GameUI : MonoBehaviour {
         FindObjectOfType<ActionQueue>().NextAction();
     }
 
-    private IEnumerator Timer()
-    {
-        yield return new WaitForSeconds(0.5F);
-        Animator anim = FindObjectOfType<Animator>();
-        if (anim.GetBool("isPossessing"))
-        {
-            anim.SetBool("isPossessing", false);
-            anim.SetTrigger("Reset");
-        }
-        anim.GetComponent<SpriteRenderer>().enabled = true;
-        FindObjectOfType<InputController>().isPossessing = false;
-    }
 
     public void ClickSoundButton()
     {

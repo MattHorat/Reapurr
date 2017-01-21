@@ -17,6 +17,8 @@ public class Level : MonoBehaviour
                 return;
             }
         }
+        var emission = FindObjectOfType<YawnController>().currentYawn.GetComponentInChildren<ParticleSystem>().emission;
+        emission.enabled = true;
         FindObjectOfType<GameUI>().ShowWinScreen();
     }
 

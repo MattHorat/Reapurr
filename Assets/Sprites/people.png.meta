@@ -1,90 +1,61 @@
 fileFormatVersion: 2
-guid: d342c635f7b1d6648ba3d84a8f0bebf8
-timeCreated: 1484954353
+guid: 000faa43bef97844bae4a9874eed471a
+timeCreated: 1484999785
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ghost_0001_right-4
-    21300002: ghost_0002_right-3
-    21300004: ghost_0003_right-2
-    21300006: ghost_0004_right-1
-    21300008: ghost_0005_left-4
-    21300010: ghost_0005_possess-5
-    21300012: ghost_0006_left-3
-    21300014: ghost_0006_possess-4
-    21300016: ghost_0007_left-2
-    21300018: ghost_0007_possess-3
-    21300020: ghost_0008_left-1
-    21300022: ghost_0008_possess-2
-    21300024: ghost_0009_back-4
-    21300026: ghost_0009_possess-1
-    21300028: ghost_0010_back-3
-    21300030: ghost_0011_back-2
-    21300032: ghost_0012_back-1
-    21300034: ghost_0013_front-4
-    21300036: ghost_0014_front-3
-    21300038: ghost_0015_front-2
-    21300040: ghost_0016_front-1
-    21300042: ghost-front-01
-    21300044: ghost-front-02
-    21300046: ghost-front-03
-    21300048: ghost-down-01
-    21300050: ghost-down-02
-    21300052: ghost-down-03
-    21300054: ghost-down-04
-    21300056: ghost-idle-01
-    21300058: ghost-idle-02
-    21300060: ghost-idle-03
-    21300062: ghost-idle-04
-    21300064: ghost-left-01
-    21300066: ghost-left-02
-    21300068: ghost-left-03
-    21300070: ghost-left-04
-    21300072: ghost-possess-01
-    21300074: ghost-possess-02
-    21300076: ghost-possess-03
-    21300078: ghost-possess-04
-    21300080: ghost-possess-05
-    21300082: ghost-right-01
-    21300084: ghost-right-02
-    21300086: ghost-right-03
-    21300088: ghost-right-04
-    21300090: ghost-up-01
-    21300092: ghost-up-02
-    21300094: ghost-up-03
-    21300096: ghost-up-04
-    21300098: people-copy_0001_mouth
-    21300100: people-copy_0002_eye-R
-    21300102: people-copy_0003_eye-L
-    21300104: people-copy_0004_eye-outlines
-    21300106: people-copy_0013_body
-    21300108: people_0000s_0000_arms-3
-    21300110: people_0000s_0001_arms-2
-    21300112: people_0000s_0002_arms-1
-    21300114: people_0006_hair-female-1
-    21300116: people_0007_hair-male-2
-    21300118: people_0008_head-3
-    21300120: people_0009_head-2
-    21300122: people_0010_head-1
-    21300124: sleeping_0000_mouth-9
-    21300126: sleeping_0000s_0000_eye-R
-    21300128: sleeping_0000s_0001_eye-L
-    21300130: sleeping_0000s_0002_eye-outlines
-    21300132: sleeping_0001_mouth-8
-    21300134: sleeping_0002_mouth-7
-    21300136: sleeping_0003_mouth-6
-    21300138: sleeping_0004_mouth-5
-    21300140: sleeping_0005_mouth-4
-    21300142: sleeping_0006_mouth3
-    21300144: sleeping_0007_mouth2
-    21300146: sleeping_0008_mouth
-    21300148: sleeping_0009_eyes-9
-    21300150: sleeping_0010_eyes-8
-    21300152: sleeping_0011_eyes-7
-    21300154: sleeping_0012_eyes-6
-    21300156: sleeping_0013_eyes-4
-    21300158: sleeping_0014_eyes-3
-    21300160: sleeping_0015_eyes-2
+    21300000: arm-L-left-01
+    21300002: arm-L-left-02
+    21300004: arm-L-left-03
+    21300006: arm-R-left-01
+    21300008: arm-R-left-02
+    21300010: arm-R-left-03
+    21300012: body-right
+    21300014: eye-L-left
+    21300016: eye-outlines
+    21300018: eye-R-right
+    21300020: eyes-01
+    21300022: hair-female-1-up
+    21300024: hair-female-left
+    21300026: hair-female-right
+    21300028: hair-male-1-up
+    21300030: hair-male-left
+    21300032: hair-male-right
+    21300034: mouth
+    21300036: mouth2
+    21300038: mouth3
+    21300040: mouth4
+    21300042: mouth5
+    21300044: mouth6
+    21300046: mouth7
+    21300048: mouth8
+    21300050: mouth9
+    21300052: people-body-up
+    21300054: people-down-01
+    21300056: people-down-02
+    21300058: people-down-03
+    21300060: people-left-01
+    21300062: people-left-02
+    21300064: people-left-03
+    21300066: people-left-arm-r-01
+    21300068: people-left-arm-r-02
+    21300070: people-left-arm-r-03
+    21300072: people-left-body
+    21300074: people-right-01
+    21300076: people-right-02
+    21300078: people-right-03
+    21300080: people-right-arm-r-01
+    21300082: people-right-arm-r-02
+    21300084: people-right-arm-r-03
+    21300086: yawn-01
+    21300088: yawn-02
+    21300090: yawn-03
+    21300092: yawn-04
+    21300094: yawn-05
+    21300096: yawn-06
+    21300098: yawn-07
+    21300100: yawn-08
+    21300102: yawn-09
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -139,348 +110,236 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost-down-01
+      name: arm-L-left-01
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1181
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arm-L-left-02
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1094
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arm-L-left-03
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1081
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arm-R-left-01
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1455
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arm-R-left-02
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1368
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arm-R-left-03
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1368
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: body-right
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1901
+        width: 93
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: eye-L-left
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1490
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: eye-outlines
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 792
+        width: 173
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: eye-R-right
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1529
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: eyes-01
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1011
+        width: 194
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: hair-female-1-up
       rect:
         serializedVersion: 2
         x: 1
-        y: 663
-        width: 128
-        height: 232
+        y: 1764
+        width: 231
+        height: 283
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: ghost-down-02
+      name: hair-female-left
       rect:
         serializedVersion: 2
-        x: 155
-        y: 751
-        width: 129
-        height: 238
+        x: 234
+        y: 1768
+        width: 231
+        height: 279
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: ghost-down-03
+      name: hair-female-right
       rect:
         serializedVersion: 2
-        x: 885
-        y: 1266
-        width: 131
-        height: 239
+        x: 467
+        y: 1768
+        width: 231
+        height: 279
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: ghost-down-04
+      name: hair-male-1-up
       rect:
         serializedVersion: 2
-        x: 286
-        y: 631
-        width: 122
-        height: 238
+        x: 234
+        y: 1536
+        width: 225
+        height: 230
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: ghost-idle-01
+      name: hair-male-left
       rect:
         serializedVersion: 2
-        x: 615
-        y: 972
-        width: 163
-        height: 198
+        x: 700
+        y: 1844
+        width: 228
+        height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: ghost-idle-02
+      name: hair-male-right
       rect:
         serializedVersion: 2
-        x: 315
-        y: 871
-        width: 152
-        height: 197
+        x: 700
+        y: 1639
+        width: 228
+        height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: ghost-idle-03
+      name: mouth
       rect:
         serializedVersion: 2
-        x: 1
-        y: 897
-        width: 152
-        height: 198
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-idle-04
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 991
-        width: 154
-        height: 198
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-left-01
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1495
-        width: 220
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-left-02
-      rect:
-        serializedVersion: 2
-        x: 699
-        y: 1890
-        width: 226
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-left-03
-      rect:
-        serializedVersion: 2
-        x: 698
-        y: 1595
-        width: 220
-        height: 151
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-left-04
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 1731
-        width: 226
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-possess-01
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 1070
-        width: 186
-        height: 198
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-possess-02
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 1412
-        width: 214
-        height: 211
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-possess-03
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1811
-        width: 234
-        height: 236
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-possess-04
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1329
-        width: 214
-        height: 164
-      alignment: 9
-      pivot: {x: 0.53271025, y: 0.58536583}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-possess-05
-      rect:
-        serializedVersion: 2
-        x: 927
-        y: 1967
-        width: 95
-        height: 80
-      alignment: 9
-      pivot: {x: 0.5368421, y: 0.275}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-right-01
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 1625
-        width: 221
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-right-02
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1652
-        width: 227
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-right-03
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 1578
-        width: 220
-        height: 151
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-right-04
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 1890
-        width: 227
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-up-01
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 517
-        width: 121
-        height: 232
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-up-02
-      rect:
-        serializedVersion: 2
-        x: 602
-        y: 732
-        width: 125
-        height: 238
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-up-03
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 829
-        width: 131
-        height: 239
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ghost-up-04
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 423
-        width: 117
-        height: 238
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people-copy_0001_mouth
-      rect:
-        serializedVersion: 2
-        x: 999
-        y: 1783
+        x: 210
+        y: 1754
         width: 21
         height: 8
       alignment: 0
@@ -489,297 +348,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: people-copy_0002_eye-R
+      name: mouth2
       rect:
         serializedVersion: 2
-        x: 971
-        y: 1652
-        width: 49
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people-copy_0003_eye-L
-      rect:
-        serializedVersion: 2
-        x: 920
-        y: 1599
-        width: 49
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people-copy_0004_eye-outlines
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1214
-        width: 194
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people-copy_0013_body
-      rect:
-        serializedVersion: 2
-        x: 927
-        y: 1813
-        width: 93
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0000s_0000_arms-3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1097
-        width: 156
-        height: 115
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0000s_0001_arms-2
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 1026
-        width: 156
-        height: 115
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0000s_0002_arms-1
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 909
-        width: 156
-        height: 115
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0006_hair-female-1
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 1782
-        width: 231
-        height: 265
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0007_hair-male-2
-      rect:
-        serializedVersion: 2
-        x: 698
-        y: 1748
-        width: 225
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0008_head-3
-      rect:
-        serializedVersion: 2
-        x: 675
-        y: 1402
-        width: 208
-        height: 191
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0009_head-2
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 1385
-        width: 208
-        height: 191
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: people_0010_head-1
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 1219
-        width: 208
-        height: 191
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0000_mouth-9
-      rect:
-        serializedVersion: 2
-        x: 980
-        y: 1699
-        width: 38
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0000s_0000_eye-R
-      rect:
-        serializedVersion: 2
-        x: 971
-        y: 1605
-        width: 49
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0000s_0001_eye-L
-      rect:
-        serializedVersion: 2
-        x: 971
-        y: 1559
-        width: 49
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0000s_0002_eye-outlines
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 1287
-        width: 194
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0001_mouth-8
-      rect:
-        serializedVersion: 2
-        x: 980
-        y: 1718
-        width: 38
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0002_mouth-7
-      rect:
-        serializedVersion: 2
-        x: 967
-        y: 1507
-        width: 28
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0003_mouth-6
-      rect:
-        serializedVersion: 2
-        x: 920
-        y: 1535
-        width: 45
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0004_mouth-5
-      rect:
-        serializedVersion: 2
-        x: 925
-        y: 1750
-        width: 72
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0005_mouth-4
-      rect:
-        serializedVersion: 2
-        x: 920
-        y: 1645
-        width: 49
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0006_mouth3
-      rect:
-        serializedVersion: 2
-        x: 925
-        y: 1708
-        width: 53
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0007_mouth2
-      rect:
-        serializedVersion: 2
-        x: 999
-        y: 1793
+        x: 670
+        y: 1696
         width: 23
         height: 18
       alignment: 0
@@ -788,104 +361,429 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: sleeping_0008_mouth
+      name: mouth3
       rect:
         serializedVersion: 2
-        x: 999
-        y: 1773
-        width: 21
-        height: 8
+        x: 873
+        y: 952
+        width: 53
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: sleeping_0009_eyes-9
+      name: mouth4
       rect:
         serializedVersion: 2
-        x: 819
-        y: 1233
-        width: 174
-        height: 31
+        x: 879
+        y: 1576
+        width: 49
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: sleeping_0010_eyes-8
+      name: mouth5
       rect:
         serializedVersion: 2
-        x: 197
-        y: 1191
-        width: 159
-        height: 26
+        x: 930
+        y: 1542
+        width: 72
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: sleeping_0011_eyes-7
+      name: mouth6
       rect:
         serializedVersion: 2
-        x: 819
-        y: 1207
+        x: 879
+        y: 1465
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mouth7
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1716
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mouth8
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1458
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mouth9
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1439
+        width: 38
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-body-up
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1753
+        width: 93
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-down-01
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 895
+        width: 207
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-down-02
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 802
+        width: 207
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-down-03
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 998
+        width: 207
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-left-01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1443
+        width: 207
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-left-02
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1447
+        width: 207
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-left-03
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1215
+        width: 207
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-left-arm-r-01
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1281
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-left-arm-r-02
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1281
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-left-arm-r-03
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1194
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-left-body
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1605
+        width: 93
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-right-01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1122
+        width: 207
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-right-02
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1318
+        width: 207
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-right-03
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1126
+        width: 207
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-right-arm-r-01
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 994
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-right-arm-r-02
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 981
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: people-right-arm-r-03
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 898
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn-01
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 896
+        width: 194
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn-02
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 883
+        width: 194
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn-03
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 683
+        width: 165
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn-04
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 784
+        width: 168
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn-05
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 740
+        width: 168
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn-06
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 791
+        width: 168
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: yawn-07
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 718
         width: 169
-        height: 24
+        height: 82
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: sleeping_0012_eyes-6
+      name: yawn-08
       rect:
         serializedVersion: 2
-        x: 819
-        y: 1175
-        width: 168
-        height: 30
+        x: 1
+        y: 640
+        width: 159
+        height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: sleeping_0013_eyes-4
+      name: yawn-09
       rect:
         serializedVersion: 2
-        x: 819
-        y: 1143
-        width: 168
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0014_eyes-3
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 1270
-        width: 194
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: sleeping_0015_eyes-2
-      rect:
-        serializedVersion: 2
-        x: 623
-        y: 1172
-        width: 194
-        height: 113
+        x: 419
+        y: 839
+        width: 174
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
