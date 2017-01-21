@@ -9,7 +9,7 @@ public class YawnController : Actionable
         if (!currentYawn.asleep)
         {
             Yawn yawn = Instantiate(currentYawn.yawnPrefab, currentYawn.transform.position, currentYawn.transform.rotation).GetComponent<Yawn>();
-            yawn.GetComponent<SpriteFader>().FadeInSprite();
+            yawn.GetComponentInChildren<SpriteFader>().FadeInSprite();
             FindObjectOfType<ActionQueue>().AddActionable(yawn);
             yawn.creator = currentYawn.gameObject;
             currentYawn.asleep = true;
