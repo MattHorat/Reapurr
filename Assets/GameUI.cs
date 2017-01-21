@@ -61,7 +61,14 @@ public class GameUI : MonoBehaviour {
         timeMarker.rectTransform.localPosition = intialMarkerPosition;
         buttonTry.interactable = true;
         count = 0;
-        FindObjectOfType<InputController>().GetComponent<Animator>().SetTrigger("Reset");
+        Animator anim = FindObjectOfType<Animator>();
+        if(anim.GetBool("isPossessing"))
+        {
+            anim.SetBool("isPossessing", false);
+            anim.SetTrigger("Reset");
+        }
+        anim.GetComponent<SpriteRenderer>().enabled = true;
+        FindObjectOfType<InputController>().isPossessing = false;
     }
 
     public void ClickTry()

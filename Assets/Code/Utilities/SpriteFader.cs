@@ -14,7 +14,6 @@ public class SpriteFader : MonoBehaviour
 
     private IEnumerator FadeIn()
     {
-        Debug.Log("test");
         float duration = 0.3F;
         float elapsedTime = 0.0F;
         Color initialColour = GetComponent<SpriteRenderer>().color;
@@ -22,7 +21,6 @@ public class SpriteFader : MonoBehaviour
         while(duration > elapsedTime)
         {
             GetComponent<SpriteRenderer>().color = Color.Lerp(initialColour, endColour, (elapsedTime / duration));
-            Debug.Log(GetComponent<SpriteRenderer>().color);
             elapsedTime += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
