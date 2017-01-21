@@ -15,6 +15,7 @@ public class Human : Actionable {
 
     private void Update ()
     {
+        GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100);
         //if (Input.GetKeyDown(KeyCode.Space))
         //{
         //    FindObjectOfType<ActionQueue>().NextAction();

@@ -12,6 +12,7 @@ public class InputController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100);
         Vector2 velocity = Vector2.zero;
 		if (Input.GetKey(up))
         {
