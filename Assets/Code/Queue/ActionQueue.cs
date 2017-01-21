@@ -14,7 +14,7 @@ public class ActionQueue : MonoBehaviour
 
     public void NextAction()
     {
-        if (actions.First.Value == null)
+        if (actions.Count == 0 || actions.First.Value == null)
         {
             // Level is lost, ran out of actions
             FindObjectOfType<Level>().EndLevel();
