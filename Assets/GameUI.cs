@@ -6,14 +6,18 @@ using UnityEngine.UI;
 public class GameUI : MonoBehaviour {
 
     public Image[] lockImages;
+    public Image[] yawnImages;
+    public Image timeMarker;
     private int count;
     private GameObject[] attractors;
     public GameObject panelWin;
+    private Vector2 intialMarkerPosition;
 
 
     public void Start()
     {
         attractors = GameObject.FindGameObjectsWithTag("Attractor");
+        intialMarkerPosition = timeMarker.transform.position;
     }
 
     public void AssignAttractor(GameObject attractor)
@@ -39,6 +43,7 @@ public class GameUI : MonoBehaviour {
         {
             interactableObject.GetComponent<AttractorController>().hasBeenSelected = false;
         }
+        timeMarker.transform.position = intialMarkerPosition;
         count = 0;
     }
 
@@ -57,5 +62,25 @@ public class GameUI : MonoBehaviour {
     {
         FindObjectOfType<Level>().ResetLevel();
         panelWin.SetActive(false);
+    }
+
+    public void StartTimer()
+    {
+        StartCoroutine(MoveTimer());
+    }
+
+    private IEnumerator MoveTimer()
+    {
+        float duration = .8F;
+        float elapsedTime = 0.0F;
+        Vector2 currentPosition = timeMarker.transform.position;
+        Vector2 newPosition = new Vector2(currentPosition.x + 100, currentPosition.y);
+        while(duration > elapsedTime)
+        {
+            timeMarker.transform.position = Vector2.Lerp(currentPosition, newPosition, (elapsedTime / duration));
+            elapsedTime += Time.deltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+        FindObjectOfType<ActionQueue>().NextAction();
     }
 }

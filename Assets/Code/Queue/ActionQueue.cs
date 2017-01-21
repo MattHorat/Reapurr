@@ -24,7 +24,7 @@ public class ActionQueue : MonoBehaviour
         actions.RemoveFirst();
         if (actionQueue.Count == 0)
         {
-            NextAction();
+            FindObjectOfType<GameUI>().StartTimer();
         }
     }
 
@@ -33,7 +33,7 @@ public class ActionQueue : MonoBehaviour
         actionQueue.Remove(action);
         if (actionQueue.Count == 0)
         {
-            NextAction();
+            FindObjectOfType<GameUI>().StartTimer();
         }
     }
 
