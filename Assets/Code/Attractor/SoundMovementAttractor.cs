@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 
 public class SoundMovementAttractor : Actionable {
-    private void Start () {
-        FindObjectOfType<ActionQueue>().AddAction(this);
-    }
 
     public override void Action()
     {

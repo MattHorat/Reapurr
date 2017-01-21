@@ -19,7 +19,7 @@ public class AttractorController : MonoBehaviour {
     {
         if (!hasBeenSelected)
         {
-            mainScreen.GetComponentInChildren<LockSystem>().AssignAttractor(gameObject);
+            mainScreen.GetComponentInChildren<MainUI>().AssignAttractor(gameObject);
             FindObjectOfType<ActionQueue>().AddAction(GetComponent<Actionable>());
             hasBeenSelected = true;
         }

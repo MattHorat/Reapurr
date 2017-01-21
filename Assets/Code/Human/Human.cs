@@ -10,7 +10,7 @@ public class Human : Actionable {
     private void Start()
     {
         startPosition = transform.position;
-        FindObjectOfType<ActionQueue>().AddYawnTarget(this);
+        //FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
 
     private void Update ()
@@ -95,5 +95,11 @@ public class Human : Actionable {
     public void ResetToStart()
     {
         transform.position = startPosition;
+        asleep = false;
+    }
+
+    public void GhostInteracts()
+    {
+        FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
 }

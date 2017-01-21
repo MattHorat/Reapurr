@@ -32,14 +32,23 @@ public class InputController : MonoBehaviour {
         }
         GetComponent<Rigidbody2D>().AddForce(velocity.normalized * speed);
 
-        if (Input.GetKey(interact))
+        if (Input.GetKeyDown(interact))
         {
             Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
             foreach(Collider2D hitCollider in hitColliders)
             {
-                if(hitCollider.gameObject != this.gameObject)
+                if (hitCollider.gameObject != this.gameObject)
                 {
-                    hitCollider.gameObject.GetComponent<AttractorController>().InteractAttractor();
+                    if (hitCollider.CompareTag("Human"))
+                    {
+                        hitCollider.gameObject.GetComponent<Human>().GhostInteracts();
+                        GetComponent<SpriteRenderer>().enabled = false;
+                    }
+                    else
+                    {
+                        hitCollider.gameObject.GetComponent<AttractorController>().InteractAttractor();
+                    }
+
                 }
             }
         }

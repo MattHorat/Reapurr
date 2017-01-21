@@ -22,10 +22,13 @@ public class Level : MonoBehaviour
             }
         }
         // TODO Display a YOU WIN MESSAGE!
+        FindObjectOfType<MainUI>().ShowWinScreen();
     }
 
     public void ResetLevel()
     {
         new List<Human>(FindObjectsOfType<Human>()).ForEach(human => human.ResetToStart());
+        FindObjectOfType<InputController>().GetComponent<SpriteRenderer>().enabled = true;
+        FindObjectOfType<MainUI>().ResetUI();
     }
 }
