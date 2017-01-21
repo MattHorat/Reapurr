@@ -51,14 +51,8 @@ public class ActionQueue : MonoBehaviour
         }
     }
 
-    public void AddFirstYawnTarget(Human human)
-    {
-        actions.AddFirst(human);
-    }
-
     public void AddAction(Actionable action)
     {
         actions.AddLast(action);
     }
-
 }
