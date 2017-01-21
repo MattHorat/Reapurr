@@ -13,6 +13,8 @@ public class GameUI : MonoBehaviour {
     private Vector2 intialMarkerPosition;
     public Button buttonTry;
     private Color32 originalColour;
+    public GameObject panelMessage;
+    public Text message;
 
     public Image notOnImage;
     private GameObject musicObject;
@@ -123,5 +125,16 @@ public class GameUI : MonoBehaviour {
             notOnImage.enabled = false;
             isMusicPlaying = true;
         }
+    }
+
+    public void DisplayMessage(string message)
+    {
+        this.message.text = message;
+        panelMessage.SetActive(true);
+    }
+
+    public void HideMessage()
+    {
+        panelMessage.SetActive(false);
     }
 }

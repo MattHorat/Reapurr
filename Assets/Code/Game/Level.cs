@@ -38,6 +38,7 @@ public class Level : MonoBehaviour
         FindObjectOfType<ActionQueue>().ResetActionQueues();
         FindObjectOfType<InputController>().transform.position = new Vector2(0, 0);
         FindObjectOfType<GameUI>().ResetUI();
+        FindObjectOfType<GameUI>().DisplayMessage(levels[currentLevel].GetComponent<TutorialMessage>().message);
     }
 
     private IEnumerator Timer()

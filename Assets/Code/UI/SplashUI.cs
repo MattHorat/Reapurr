@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SplashUI : MonoBehaviour {
-
+public class SplashUI : MonoBehaviour 
+{
     public GameObject player;
 
 	private void Start()
@@ -16,6 +16,8 @@ public class SplashUI : MonoBehaviour {
         FindObjectOfType<UISpawner>().SpawnGameUI();
         player.SetActive(true);
         Destroy(gameObject);
+        Level level = FindObjectOfType<Level>();
+        FindObjectOfType<GameUI>().DisplayMessage(level.levels[level.currentLevel].GetComponent<TutorialMessage>().message);
     }
 	
 }
