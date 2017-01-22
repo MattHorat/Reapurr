@@ -33,6 +33,10 @@ TextureImporter:
     21300052: radio_0004s_0000_dial-L
     21300054: radio_0005_antenna
     21300056: printer-tray
+    21300058: kitchenette-sink
+    21300060: kitchnette-counter
+    21300062: table-plain
+    21300064: table
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -120,8 +124,8 @@ TextureImporter:
       name: coffee-machine-3
       rect:
         serializedVersion: 2
-        x: 553
-        y: 498
+        x: 526
+        y: 659
         width: 127
         height: 152
       alignment: 9
@@ -133,8 +137,8 @@ TextureImporter:
       name: coffee-machine-4
       rect:
         serializedVersion: 2
-        x: 796
-        y: 478
+        x: 526
+        y: 505
         width: 127
         height: 152
       alignment: 9
@@ -146,8 +150,8 @@ TextureImporter:
       name: coffee-machine-5
       rect:
         serializedVersion: 2
-        x: 566
-        y: 344
+        x: 797
+        y: 655
         width: 127
         height: 152
       alignment: 9
@@ -159,12 +163,38 @@ TextureImporter:
       name: coffee-machine-6
       rect:
         serializedVersion: 2
-        x: 797
-        y: 632
+        x: 769
+        y: 224
         width: 168
         height: 175
       alignment: 9
       pivot: {x: 0.61904764, y: 0.5542857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: kitchenette-sink
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 529
+        width: 164
+        height: 208
+      alignment: 9
+      pivot: {x: 0.5121951, y: 0.59615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: kitchnette-counter
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 109
+        width: 164
+        height: 194
+      alignment: 9
+      pivot: {x: 0.5121951, y: 0.63917524}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
@@ -263,8 +293,8 @@ TextureImporter:
       name: printer-base
       rect:
         serializedVersion: 2
-        x: 309
-        y: 562
+        x: 773
+        y: 477
         width: 242
         height: 175
       alignment: 0
@@ -276,8 +306,8 @@ TextureImporter:
       name: printer-blank-paper
       rect:
         serializedVersion: 2
-        x: 448
-        y: 353
+        x: 391
+        y: 18
         width: 116
         height: 89
       alignment: 0
@@ -289,8 +319,8 @@ TextureImporter:
       name: printer-front
       rect:
         serializedVersion: 2
-        x: 553
-        y: 737
+        x: 769
+        y: 401
         width: 242
         height: 74
       alignment: 0
@@ -302,8 +332,8 @@ TextureImporter:
       name: printer-paper-stack
       rect:
         serializedVersion: 2
-        x: 360
-        y: 146
+        x: 679
+        y: 654
         width: 116
         height: 157
       alignment: 0
@@ -315,8 +345,8 @@ TextureImporter:
       name: printer-paper
       rect:
         serializedVersion: 2
-        x: 478
-        y: 197
+        x: 655
+        y: 507
         width: 116
         height: 145
       alignment: 0
@@ -328,8 +358,8 @@ TextureImporter:
       name: printer-tray
       rect:
         serializedVersion: 2
-        x: 553
-        y: 652
+        x: 509
+        y: 24
         width: 168
         height: 83
       alignment: 0
@@ -354,8 +384,8 @@ TextureImporter:
       name: radio_0000s_0000_speakers-R
       rect:
         serializedVersion: 2
-        x: 723
-        y: 619
+        x: 448
+        y: 411
         width: 71
         height: 116
       alignment: 0
@@ -367,8 +397,8 @@ TextureImporter:
       name: radio_0000s_0001_speakers-L
       rect:
         serializedVersion: 2
-        x: 448
-        y: 444
+        x: 696
+        y: 389
         width: 71
         height: 116
       alignment: 0
@@ -464,6 +494,32 @@ TextureImporter:
         height: 130
       alignment: 9
       pivot: {x: 0.02536232, y: 0.06923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: table-plain
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 315
+        width: 173
+        height: 188
+      alignment: 9
+      pivot: {x: 0.5086705, y: 0.57978725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: table
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 125
+        width: 173
+        height: 188
+      alignment: 9
+      pivot: {x: 0.5086705, y: 0.57978725}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
