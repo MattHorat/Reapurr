@@ -88,6 +88,7 @@ public class Human : Actionable {
                 directionSprites[1].SetActive(true);
                 //right
                 break;
+            case 0:
             case 4:
                 foreach (GameObject sprites in directionSprites)
                 {
