@@ -94,7 +94,7 @@ public class Human : Actionable {
                     sprites.SetActive(false);
                 }
                 Debug.Log(4);
-                directionSprites[2].SetActive(true);
+                directionSprites[0].SetActive(true);
                 //up
                 break;
             case 3:
@@ -103,7 +103,7 @@ public class Human : Actionable {
                     sprites.SetActive(false);
                 }
                 Debug.Log(3);
-                directionSprites[0].SetActive(true);
+                directionSprites[2].SetActive(true);
                 //down
                 break;
             }
