@@ -57,6 +57,7 @@ public class GameUI : MonoBehaviour {
         foreach (Image lockImage in lockImages)
         {
             lockImage.sprite = defaultSprite;
+            lockImage.color = originalColour;
             //lockImage.GetComponentInChildren<Text>().text = "";
         }
         GameObject[] attractors = GameObject.FindGameObjectsWithTag("Attractor");
@@ -74,6 +75,7 @@ public class GameUI : MonoBehaviour {
         }
         anim.GetComponent<SpriteRenderer>().enabled = true;
         FindObjectOfType<InputController>().isPossessing = false;
+
     }
 
     public void ShowWinScreen()

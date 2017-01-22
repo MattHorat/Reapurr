@@ -12,6 +12,19 @@ public class YawnController : Actionable
         {
             yawn = Instantiate(currentYawn.yawnPrefab, currentYawn.transform.position, currentYawn.transform.rotation).GetComponent<Yawn>();
             FindObjectOfType<ActionQueue>().AddActionable(yawn);
+            foreach (GameObject sprites in currentYawn.directionSprites)
+            {
+                SpriteRenderer[] eyeSprites = sprites.GetComponentsInChildren<SpriteRenderer>();
+                foreach (SpriteRenderer eye in eyeSprites)
+                {
+                    if (eye.tag == "Face")
+                    {
+                        eye.GetComponent<SpriteRenderer>().enabled = false;
+                    }
+                }
+            }
+            currentYawn.yawnSprite.GetComponent<SpriteRenderer>().enabled = true;
+            currentYawn.yawnSprite.GetComponent<Animator>().SetTrigger("MakeYawn");
             yawn.creator = currentYawn.gameObject;
             StartCoroutine(StartYawn());
         }

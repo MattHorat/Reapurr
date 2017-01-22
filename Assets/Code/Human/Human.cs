@@ -12,6 +12,8 @@ public class Human : Actionable {
 
     public GameObject[] directionSprites;
     private Quaternion initialRotation;
+    public GameObject yawnSprite;
+    public GameObject sleepSprite;
 
     private void LateUpdate()
     {
@@ -77,8 +79,9 @@ public class Human : Actionable {
                 }
                 directionSprites[3].SetActive(true);
                 Debug.Log(directionSprites[3]);
+                GetComponentInChildren<Animator>().SetInteger("direction", 2);
                 break;
-                //left
+                //right
             case 2:
                 foreach (GameObject sprites in directionSprites)
                 {
@@ -86,7 +89,8 @@ public class Human : Actionable {
                 }
                 Debug.Log(directionSprites[1]);
                 directionSprites[1].SetActive(true);
-                //right
+                GetComponentInChildren<Animator>().SetInteger("direction", 4);
+                //left
                 break;
             case 0:
             case 4:
@@ -96,6 +100,7 @@ public class Human : Actionable {
                 }
                 Debug.Log(4);
                 directionSprites[0].SetActive(true);
+                GetComponentInChildren<Animator>().SetInteger("direction", 1);
                 //up
                 break;
             case 3:
@@ -105,6 +110,7 @@ public class Human : Actionable {
                 }
                 Debug.Log(3);
                 directionSprites[2].SetActive(true);
+                GetComponentInChildren<Animator>().SetInteger("direction", 3);
                 //down
                 break;
             }
@@ -159,8 +165,15 @@ public class Human : Actionable {
         if (!asleep)
         {
             Yawn yawn = Instantiate(yawnPrefab, transform.position, transform.rotation).GetComponent<Yawn>();
-            Debug.Log("test");
+            
             yawn.GetComponent<SpriteFader>().FadeInSprite();
+
+            foreach (GameObject sprites in directionSprites)
+            {
+                sprites.SetActive(false);
+            }
+            yawnSprite.SetActive(true);
+
             FindObjectOfType<ActionQueue>().AddActionable(yawn);
             yawn.creator = gameObject;
             asleep = true;
@@ -174,11 +187,39 @@ public class Human : Actionable {
         var emission = GetComponentInChildren<ParticleSystem>().emission;
         emission.enabled = false;
         asleep = false;
+
         SetMoveDirectionSprite(startingDirection);
+
+        yawnSprite.SetActive(false);
+        directionSprites[0].SetActive(true);
+        foreach (GameObject sprites in directionSprites)
+        {
+            SpriteRenderer[] eyeSprites = sprites.GetComponentsInChildren<SpriteRenderer>();
+            foreach (SpriteRenderer eye in eyeSprites)
+            {
+                if (eye.tag == "Face")
+                {
+                    eye.GetComponent<SpriteRenderer>().enabled = true;
+                }
+            }
+        }
+        sleepSprite.SetActive(false);
+
     }
 
     public void GhostInteracts()
     {
         //FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
+
+    public void MakeSleep()
+    {
+        foreach (GameObject sprites in directionSprites)
+        {
+            sprites.SetActive(false);
+        }
+        yawnSprite.GetComponent<SpriteRenderer>().enabled = false;
+        sleepSprite.SetActive(true);
+    }
+
 }
