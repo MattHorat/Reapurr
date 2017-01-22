@@ -9,6 +9,8 @@ public class Human : Actionable {
     private Vector2 startPosition;
     private Quaternion startRotation;
 
+    public GameObject[] directionSprites;
+
     private void Start()
     {
         startRotation = transform.rotation;
@@ -57,6 +59,61 @@ public class Human : Actionable {
         }
     }
 
+    public void SetMoveDirectionSprite()
+    {
+        Debug.Log("test");
+        if (Mathf.Abs(transform.right.x) < Mathf.Abs(transform.right.y)) //x > 0
+        {
+            if(transform.right.y > 0)
+            {
+                foreach(GameObject sprites in directionSprites)
+                {
+                    sprites.SetActive(false);
+                }
+                Debug.Log("left");
+                directionSprites[1].SetActive(true);
+                //left
+            }
+            else
+            {
+                foreach (GameObject sprites in directionSprites)
+                {
+                    sprites.SetActive(false);
+                }
+                Debug.Log("right");
+                directionSprites[3].SetActive(true);
+                //right
+            }
+        }
+        else
+        {
+            if(transform.right.x > 0)
+            {
+                foreach (GameObject sprites in directionSprites)
+                {
+                    sprites.SetActive(false);
+                }
+                directionSprites[2].SetActive(true);
+                Debug.Log("up");
+                //up
+            }
+            else
+            {
+                foreach (GameObject sprites in directionSprites)
+                {
+                    sprites.SetActive(false);
+                }
+                directionSprites[0].SetActive(true);
+                Debug.Log("down");
+                //down
+            }
+        }
+        Quaternion rotation = directionSprites[0].transform.parent.transform.parent.rotation;
+        //Debug.Log(rotation);
+        // Debug.Log(Quaternion.Inverse(rotation));
+        directionSprites[0].transform.parent.transform.rotation = Quaternion.Inverse(rotation);
+    }
+
     public void FaceTarget(GameObject targetObject)
     {
         if (!asleep && HasLineOfSight(targetObject))
@@ -75,6 +132,7 @@ public class Human : Actionable {
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
         }
+        SetMoveDirectionSprite();
     }
 
     public override void Action()

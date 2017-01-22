@@ -23,6 +23,7 @@ public class ActionQueue : MonoBehaviour
             return;
         }
         actions.First.Value.Action();
+        //actions.First.Value.
         actions.RemoveFirst();
         if (actionQueue.Count == 0)
         {
