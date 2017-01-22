@@ -22,7 +22,7 @@ public class Human : Actionable {
 
     private void Start()
     {
-        SetMoveDirectionSprite(startingDirection);
+        SetMoveDirectionSprite(startingDirection, false);
         startRotation = transform.rotation;
         startPosition = transform.position;
         initialRotation = directionSprites[0].transform.parent.transform.rotation;
@@ -69,7 +69,7 @@ public class Human : Actionable {
         }
     }
 
-    public void SetMoveDirectionSprite(int direction)
+    public void SetMoveDirectionSprite(int direction, bool isTrue = true)
     {
         switch (direction) {
             case 1:
@@ -79,7 +79,10 @@ public class Human : Actionable {
                 }
                 directionSprites[3].SetActive(true);
                 Debug.Log(directionSprites[3]);
-                GetComponentInChildren<Animator>().SetInteger("direction", 2);
+                if(isTrue)
+                {
+                    GetComponentInChildren<Animator>().SetInteger("direction", 2);
+                }
                 break;
                 //right
             case 2:
@@ -89,7 +92,10 @@ public class Human : Actionable {
                 }
                 Debug.Log(directionSprites[1]);
                 directionSprites[1].SetActive(true);
-                GetComponentInChildren<Animator>().SetInteger("direction", 4);
+                if(isTrue)
+                {
+                    GetComponentInChildren<Animator>().SetInteger("direction", 4);
+                }
                 //left
                 break;
             case 0:
@@ -100,7 +106,10 @@ public class Human : Actionable {
                 }
                 Debug.Log(4);
                 directionSprites[0].SetActive(true);
-                GetComponentInChildren<Animator>().SetInteger("direction", 1);
+                if(isTrue)
+                {
+                    GetComponentInChildren<Animator>().SetInteger("direction", 1);
+                }
                 //up
                 break;
             case 3:
@@ -110,7 +119,11 @@ public class Human : Actionable {
                 }
                 Debug.Log(3);
                 directionSprites[2].SetActive(true);
-                GetComponentInChildren<Animator>().SetInteger("direction", 3);
+                if(isTrue)
+                {
+                    GetComponentInChildren<Animator>().SetInteger("direction", 3);
+                }
+
                 //down
                 break;
             }
@@ -188,7 +201,7 @@ public class Human : Actionable {
         emission.enabled = false;
         asleep = false;
 
-        SetMoveDirectionSprite(startingDirection);
+        SetMoveDirectionSprite(startingDirection, false);
 
         yawnSprite.SetActive(false);
         directionSprites[0].SetActive(true);
