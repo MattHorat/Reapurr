@@ -20,6 +20,9 @@ public class GameUI : MonoBehaviour {
     private GameObject musicObject;
     bool isMusicPlaying = true;
 
+    public Sprite yawnSprite;
+    public Sprite defaultSprite;
+
 
     public void Start()
     {
@@ -30,8 +33,8 @@ public class GameUI : MonoBehaviour {
 
     public void AssignAttractor(GameObject attractor)
     {
-        lockImages[count].color = Color.green;
-        lockImages[count].GetComponentInChildren<Text>().text = attractor.GetComponent<AttractorController>().objectName;
+        lockImages[count].sprite = attractor.GetComponent<AttractorController>().objectSprite;
+        //lockImages[count].GetComponentInChildren<Text>().text = attractor.GetComponent<AttractorController>().objectName;
         count++;
     }
 
@@ -43,8 +46,9 @@ public class GameUI : MonoBehaviour {
 
     public void AssignYawn()
     {
-        lockImages[count].color = Color.green;
-        lockImages[count].GetComponentInChildren<Text>().text = "Yawn";
+        lockImages[count].sprite = yawnSprite;
+        lockImages[count].color = Color.white;
+        //lockImages[count].GetComponentInChildren<Text>().text = "Yawn";
         count++;
     }
 
@@ -52,8 +56,8 @@ public class GameUI : MonoBehaviour {
     {
         foreach (Image lockImage in lockImages)
         {
-            lockImage.color = originalColour;
-            lockImage.GetComponentInChildren<Text>().text = "";
+            lockImage.sprite = defaultSprite;
+            //lockImage.GetComponentInChildren<Text>().text = "";
         }
         GameObject[] attractors = GameObject.FindGameObjectsWithTag("Attractor");
         foreach (GameObject interactableObject in attractors)

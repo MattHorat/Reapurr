@@ -7,6 +7,7 @@ public class AttractorController : MonoBehaviour {
 
     public bool hasBeenSelected;
     public string objectName;
+    public Sprite objectSprite;
 
     public void InteractAttractor()
     {
