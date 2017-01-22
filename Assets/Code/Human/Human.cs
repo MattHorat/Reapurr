@@ -173,6 +173,7 @@ public class Human : Actionable {
         var emission = GetComponentInChildren<ParticleSystem>().emission;
         emission.enabled = false;
         asleep = false;
+        SetMoveDirectionSprite(startingDirection);
     }
 
     public void GhostInteracts()
