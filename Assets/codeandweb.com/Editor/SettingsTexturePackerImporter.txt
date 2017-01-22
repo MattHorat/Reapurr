@@ -5,12 +5,15 @@ tpsheetFileNames:
 - Assets/Sprites/ghost.tpsheet
 - Assets/Sprites/objects.tpsheet
 - Assets/Sprites/people.tpsheet
+- Assets/Sprites/UI.tpsheet
 textureFileNames:
 - Assets/Prefabs/Sprites/ghost.png
 - Assets/Sprites/ghost.png
 - Assets/Sprites/objects.png
 - Assets/Sprites/people.png
+- Assets/Sprites/UI.png
 normalmapFileNames:
+- 
 - 
 - 
 - 
