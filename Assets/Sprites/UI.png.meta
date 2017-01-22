@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: f1d8e160148d98441afe3e9ee0901602
+timeCreated: 1485051026
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: empty-icon
+    21300002: icon-coffee
+    21300004: icon-light
+    21300006: icon-plant
+    21300008: icon-printer
+    21300010: start-button
+    21300012: UI-marker
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: empty-icon
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 286
+        width: 155
+        height: 150
+      alignment: 9
+      pivot: {x: 0.4967742, y: 0.5133333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: icon-coffee
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 871
+        width: 145
+        height: 152
+      alignment: 9
+      pivot: {x: 0.48965517, y: 0.48026314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: icon-light
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 438
+        width: 193
+        height: 189
+      alignment: 9
+      pivot: {x: 0.63212436, y: 0.41798943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: icon-plant
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 629
+        width: 210
+        height: 202
+      alignment: 9
+      pivot: {x: 0.4, y: 0.48019803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: icon-printer
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 416
+        width: 157
+        height: 182
+      alignment: 9
+      pivot: {x: 0.5477707, y: 0.5494506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: start-button
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 833
+        width: 356
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI-marker
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 600
+        width: 231
+        height: 231
+      alignment: 9
+      pivot: {x: 0.44588745, y: 0.5151515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

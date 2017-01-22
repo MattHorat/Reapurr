@@ -5,16 +5,25 @@ public class Human : Actionable {
     public GameObject yawnPrefab;
     public bool asleep = false;
     public AudioClip[] exclamationSounds;
+    public int startingDirection;
     
     private Vector2 startPosition;
     private Quaternion startRotation;
 
     public GameObject[] directionSprites;
+    private Quaternion initialRotation;
+
+    private void LateUpdate()
+    {
+        directionSprites[0].transform.parent.transform.rotation = initialRotation;
+    }
 
     private void Start()
     {
+        SetMoveDirectionSprite(startingDirection);
         startRotation = transform.rotation;
         startPosition = transform.position;
+        initialRotation = directionSprites[0].transform.parent.transform.rotation;
         //FindObjectOfType<ActionQueue>().AddYawnTarget(this);
     }
 
@@ -44,7 +53,6 @@ public class Human : Actionable {
             // We want to offset our position by an amount
             if (Mathf.Abs(localPositionTarget.x) > Mathf.Abs(localPositionTarget.y))
             {
-
                 addedPosition = (localPositionTarget.x > 0) ? Vector2.left : Vector2.right;
             }
             else
@@ -59,59 +67,46 @@ public class Human : Actionable {
         }
     }
 
-    public void SetMoveDirectionSprite()
+    public void SetMoveDirectionSprite(int direction)
     {
-        Debug.Log("test");
-        if (Mathf.Abs(transform.right.x) < Mathf.Abs(transform.right.y)) //x > 0
-        {
-            if(transform.right.y > 0)
-            {
+        switch (direction) {
+            case 1:
                 foreach(GameObject sprites in directionSprites)
                 {
                     sprites.SetActive(false);
                 }
-                Debug.Log("left");
-                directionSprites[1].SetActive(true);
-                //left
-            }
-            else
-            {
-                foreach (GameObject sprites in directionSprites)
-                {
-                    sprites.SetActive(false);
-                }
-                Debug.Log("right");
                 directionSprites[3].SetActive(true);
+                Debug.Log(directionSprites[3]);
+                break;
+                //left
+            case 2:
+                foreach (GameObject sprites in directionSprites)
+                {
+                    sprites.SetActive(false);
+                }
+                Debug.Log(directionSprites[1]);
+                directionSprites[1].SetActive(true);
                 //right
-            }
-        }
-        else
-        {
-            if(transform.right.x > 0)
-            {
+                break;
+            case 4:
                 foreach (GameObject sprites in directionSprites)
                 {
                     sprites.SetActive(false);
                 }
-                directionSprites[2].SetActive(true);
-                Debug.Log("up");
-                //up
-            }
-            else
-            {
-                foreach (GameObject sprites in directionSprites)
-                {
-                    sprites.SetActive(false);
-                }
+                Debug.Log(4);
                 directionSprites[0].SetActive(true);
-                Debug.Log("down");
+                //up
+                break;
+            case 3:
+                foreach (GameObject sprites in directionSprites)
+                {
+                    sprites.SetActive(false);
+                }
+                Debug.Log(3);
+                directionSprites[2].SetActive(true);
                 //down
+                break;
             }
-        }
-        Quaternion rotation = directionSprites[0].transform.parent.transform.parent.rotation;
-        //Debug.Log(rotation);
-        // Debug.Log(Quaternion.Inverse(rotation));
-        directionSprites[0].transform.parent.transform.rotation = Quaternion.Inverse(rotation);
     }
 
     public void FaceTarget(GameObject targetObject)
@@ -121,19 +116,42 @@ public class Human : Actionable {
             GetComponent<AudioSource>().PlayOneShot(exclamationSounds[Random.Range(0, exclamationSounds.Length)]);
             Vector2 localPositionTarget = targetObject.transform.position - gameObject.transform.position;
             // If we are closer to the x axis, face based on x, otherwise y
+            float rotation = 0;
             if (Mathf.Abs(localPositionTarget.x) > Mathf.Abs(localPositionTarget.y))
             {
-                float rotation = (localPositionTarget.x > 0) ? 0 : 180;
+                if (localPositionTarget.x > 0)
+                {
+                    rotation = 0;
+                    SetMoveDirectionSprite(1);
+                    Debug.Log(1);
+                }
+                else
+                {
+                    rotation = 180;
+                    SetMoveDirectionSprite(2);
+                    Debug.Log(2);
+                }
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
             else
             {
-                float rotation = (localPositionTarget.y > 0) ? 90 : 270;
+                if (localPositionTarget.y > 0)
+                {
+                    rotation = 90;
+                    SetMoveDirectionSprite(3);
+                    Debug.Log(3);
+                }
+                else
+                {
+                    rotation = 270;
+                    SetMoveDirectionSprite(4);
+                    Debug.Log(4);
+                }
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
         }
-        SetMoveDirectionSprite();
     }
+
 
     public override void Action()
     {
