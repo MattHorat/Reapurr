@@ -11,6 +11,7 @@ public class Yawn : MonoBehaviour
     private void Start()
     {
        GameObject.Find("SoundEffects").GetComponent<AudioSource>().PlayOneShot(yawnSounds[Random.Range(0, yawnSounds.Length)]);
+       StartCoroutine(YawnGrow());
     }
 
     private void FixedUpdate()
