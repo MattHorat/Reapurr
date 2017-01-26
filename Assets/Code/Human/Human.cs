@@ -74,17 +74,17 @@ public class Human : Actionable {
                 foreach(GameObject sprites in directionSprites)
                 {
                     sprites.SetActive(false);
+                    sprites.GetComponent<Animator>().enabled = false;
                 }
                 directionSprites[3].SetActive(true);
-                Debug.Log(directionSprites[3]);
                 break;
                 //left
             case 2:
                 foreach (GameObject sprites in directionSprites)
                 {
                     sprites.SetActive(false);
+                    sprites.GetComponent<Animator>().enabled = false;
                 }
-                Debug.Log(directionSprites[1]);
                 directionSprites[1].SetActive(true);
                 //right
                 break;
@@ -93,8 +93,8 @@ public class Human : Actionable {
                 foreach (GameObject sprites in directionSprites)
                 {
                     sprites.SetActive(false);
+                    sprites.GetComponent<Animator>().enabled = false;
                 }
-                Debug.Log(4);
                 directionSprites[0].SetActive(true);
                 //up
                 break;
@@ -102,8 +102,8 @@ public class Human : Actionable {
                 foreach (GameObject sprites in directionSprites)
                 {
                     sprites.SetActive(false);
+                    sprites.GetComponent<Animator>().enabled = false;
                 }
-                Debug.Log(3);
                 directionSprites[2].SetActive(true);
                 //down
                 break;
@@ -124,13 +124,11 @@ public class Human : Actionable {
                 {
                     rotation = 0;
                     SetMoveDirectionSprite(1);
-                    Debug.Log(1);
                 }
                 else
                 {
                     rotation = 180;
                     SetMoveDirectionSprite(2);
-                    Debug.Log(2);
                 }
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
@@ -140,13 +138,11 @@ public class Human : Actionable {
                 {
                     rotation = 90;
                     SetMoveDirectionSprite(3);
-                    Debug.Log(3);
                 }
                 else
                 {
                     rotation = 270;
                     SetMoveDirectionSprite(4);
-                    Debug.Log(4);
                 }
                 gameObject.GetComponent<Rigidbody2D>().MoveRotation(rotation);
             }
@@ -159,7 +155,6 @@ public class Human : Actionable {
         if (!asleep)
         {
             Yawn yawn = Instantiate(yawnPrefab, transform.position, transform.rotation).GetComponent<Yawn>();
-            Debug.Log("test");
             yawn.GetComponent<SpriteFader>().FadeInSprite();
             FindObjectOfType<ActionQueue>().AddActionable(yawn);
             yawn.creator = gameObject;

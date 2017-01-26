@@ -9,6 +9,7 @@ public class SplashUI : MonoBehaviour
 	private void Start()
     {
         GetComponent<Canvas>().worldCamera = FindObjectOfType<Camera>();
+        ClickStartGame();
 	}
 
     public void ClickStartGame()

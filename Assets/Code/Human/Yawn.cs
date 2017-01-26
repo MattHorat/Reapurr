@@ -48,7 +48,6 @@ public class Yawn : MonoBehaviour
         while(duration > elapsedTime)
         {
             yawnSprite.transform.localScale = Vector2.Lerp(originalSize, endSize, (elapsedTime / duration));
-            Debug.Log(yawnSprite.transform.localScale);
             elapsedTime += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }

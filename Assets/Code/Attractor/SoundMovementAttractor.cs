@@ -19,18 +19,18 @@ public class SoundMovementAttractor : Actionable
             GetComponentInChildren<Animator>().enabled = true;
             StartCoroutine(StopAnimation());
         }
-
-        Human[] humans = GameObject.FindObjectsOfType<Human>();
-        foreach (Human human in humans)
-        {
-            human.SetMoveTarget(gameObject);
-        }
     }
 
     private IEnumerator StopAnimation()
     {
         yield return new WaitForSeconds(0.8F);
         GetComponentInChildren<Animator>().enabled = false;
+
+        Human[] humans = GameObject.FindObjectsOfType<Human>();
+        foreach (Human human in humans)
+        {
+            human.SetMoveTarget(gameObject);
+        }
     }
 
     private void RadioOn()

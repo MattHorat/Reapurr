@@ -6,10 +6,12 @@ public class HumanMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        GetComponentInChildren<Animator>().enabled = true;
         GetComponent<Rigidbody2D>().position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, targetPosition) < 0.1)
         {
             FindObjectOfType<ActionQueue>().MarkComplete(this);
+            GetComponentInChildren<Animator>().enabled = false;
             Destroy(this);
         }
     }

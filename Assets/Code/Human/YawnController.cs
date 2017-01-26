@@ -20,7 +20,6 @@ public class YawnController : Actionable
     private IEnumerator StartYawn()
     {
         yield return new WaitForSeconds(0.8F);
-        Debug.Log(yawn.gameObject);
         yawn.gameObject.SetActive(true);
         yawn.GetComponentInChildren<SpriteFader>().FadeInSprite();
         currentYawn.asleep = true;
