@@ -24,6 +24,7 @@ public class SoundMovementAttractor : Actionable
     private IEnumerator StopAnimation()
     {
         yield return new WaitForSeconds(0.8F);
+        GetComponent<AudioSource>().Stop();
         GetComponentInChildren<Animator>().enabled = false;
 
         Human[] humans = GameObject.FindObjectsOfType<Human>();

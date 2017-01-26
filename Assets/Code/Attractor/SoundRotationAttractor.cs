@@ -15,6 +15,7 @@ public class SoundRotationAttractor : Actionable
     private IEnumerator StopAnimation()
     {
         yield return new WaitForSeconds(0.8F);
+        GetComponent<AudioSource>().Stop();
         Human[] humans = GameObject.FindObjectsOfType<Human>();
         foreach (Human human in humans)
         {
