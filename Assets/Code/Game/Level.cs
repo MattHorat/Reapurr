@@ -17,9 +17,10 @@ public class Level : MonoBehaviour
                 return;
             }
         }
+        FindObjectOfType<YawnController>().currentYawn.PlayYawn();
         var emission = FindObjectOfType<YawnController>().currentYawn.GetComponentInChildren<ParticleSystem>().emission;
         emission.enabled = true;
-        FindObjectOfType<GameUI>().ShowWinScreen();
+        StartCoroutine(DisplayWinScreen());
     }
 
     public void ResetLevel()
@@ -45,5 +46,11 @@ public class Level : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0F);
         ResetLevel();
+    }
+
+    private IEnumerator DisplayWinScreen()
+    {
+        yield return new WaitForSeconds(1.5F);
+        FindObjectOfType<GameUI>().ShowWinScreen();
     }
 }

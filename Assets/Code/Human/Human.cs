@@ -11,7 +11,12 @@ public class Human : Actionable {
     private Quaternion startRotation;
 
     public GameObject[] directionSprites;
+    public GameObject yawnObject;
     private Quaternion initialRotation;
+
+    public Sprite originalSprite;
+    public GameObject hair;
+    public GameObject eyes;
 
     private void LateUpdate()
     {
@@ -149,7 +154,6 @@ public class Human : Actionable {
         }
     }
 
-
     public override void Action()
     {
         if (!asleep)
@@ -170,10 +174,24 @@ public class Human : Actionable {
         emission.enabled = false;
         asleep = false;
         SetMoveDirectionSprite(startingDirection);
+        yawnObject.GetComponent<SpriteRenderer>().sprite = originalSprite;
+        hair.SetActive(true);
+        eyes.SetActive(true);
+        yawnObject.SetActive(false);
     }
 
     public void GhostInteracts()
     {
         //FindObjectOfType<ActionQueue>().AddYawnTarget(this);
+    }
+
+    public void PlayYawn()
+    {
+        foreach (GameObject sprites in directionSprites)
+        {
+            sprites.SetActive(false);
+            sprites.GetComponent<Animator>().enabled = false;
+        }
+        yawnObject.SetActive(true);
     }
 }

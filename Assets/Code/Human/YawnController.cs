@@ -23,6 +23,7 @@ public class YawnController : Actionable
         yawn.gameObject.SetActive(true);
         yawn.GetComponentInChildren<SpriteFader>().FadeInSprite();
         currentYawn.asleep = true;
+        currentYawn.PlayYawn();
         var emission = currentYawn.GetComponentInChildren<ParticleSystem>().emission;
         emission.enabled = true;
     }
