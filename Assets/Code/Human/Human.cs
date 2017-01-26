@@ -41,6 +41,7 @@ public class Human : Actionable {
         RaycastHit2D sightTest = Physics2D.Raycast(start, direction, distance);
         if (sightTest.collider != null)
         {
+            Debug.Log(sightTest.collider.gameObject);
             if (sightTest.collider.gameObject != gameObject && targetObject == sightTest.collider.gameObject)
             {
                 return true;
@@ -51,6 +52,7 @@ public class Human : Actionable {
 
     public void SetMoveTarget(GameObject targetObject)
     {
+        Debug.Log("ye");
         if (!asleep && HasLineOfSight(targetObject))
         {
             Vector2 localPositionTarget = targetObject.transform.position - gameObject.transform.position;

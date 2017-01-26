@@ -19,19 +19,21 @@ public class SoundMovementAttractor : Actionable
             GetComponentInChildren<Animator>().enabled = true;
             StartCoroutine(StopAnimation());
         }
+        FindObjectOfType<ActionQueue>().AddActionable(this);
+    }
+
+    private IEnumerator StopAnimation()
+    {
+        yield return new WaitForSeconds(0.7F);
+        GetComponent<AudioSource>().Stop();
+        GetComponentInChildren<Animator>().enabled = false;
 
         Human[] humans = GameObject.FindObjectsOfType<Human>();
         foreach (Human human in humans)
         {
             human.SetMoveTarget(gameObject);
         }
-    }
-
-    private IEnumerator StopAnimation()
-    {
-        yield return new WaitForSeconds(0.8F);
-        GetComponent<AudioSource>().Stop();
-        GetComponentInChildren<Animator>().enabled = false;
+        FindObjectOfType<ActionQueue>().MarkComplete(this);
     }
 
     private void RadioOn()
@@ -58,6 +60,13 @@ public class SoundMovementAttractor : Actionable
         radioOffPrefab.gameObject.SetActive(true);
         radioOnPrefab.gameObject.SetActive(false);
         radioOnPrefab.GetComponent<SpriteRenderer>().enabled = false;
-        radioOnPrefab.GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<AudioSource>().Stop();
+
+        Human[] humans = GameObject.FindObjectsOfType<Human>();
+        foreach (Human human in humans)
+        {
+            human.SetMoveTarget(gameObject);
+        }
+        FindObjectOfType<ActionQueue>().MarkComplete(this);
     }
 }
