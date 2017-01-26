@@ -8,10 +8,19 @@ public class Yawn : MonoBehaviour
     public AudioClip[] yawnSounds;
     public GameObject yawnSprite;
 
+    private Quaternion initialRotation;
+
     private void Start()
     {
        GameObject.Find("SoundEffects").GetComponent<AudioSource>().PlayOneShot(yawnSounds[Random.Range(0, yawnSounds.Length)]);
+       initialRotation = yawnSprite.transform.rotation;
+       Debug.Log(initialRotation);
        StartCoroutine(YawnGrow());
+    }
+
+    private void LateUpdate()
+    {
+        yawnSprite.transform.rotation = Quaternion.identity;
     }
 
     private void FixedUpdate()
